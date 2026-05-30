@@ -1,0 +1,41 @@
+C:\Users\yuehs> cd ..\Dropbox\樂活整合行銷管理顧問公司\招募-透過招商計畫\2026-S2B2C賦能AI系統平台\LOHAShare_AI_Platform>
+
+C:\Users\yuehs\Dropbox\樂活整合行銷管理顧問公司\招募-透過招商計畫\2026-S2B2C賦能AI系統平台\LOHAShare_AI_Platform>tree >LOHAShare_AI_Platform_folder_tree.txt
+
+列出磁碟區 Windows 的資料夾 PATH
+磁碟區序號為 000000DD F82A:8308
+C:.
+├─00_Index
+├─00_Main_PRD
+├─01_Architecture_Governance
+├─02_Modules
+│  ├─Email_Notification
+│  │  └─Fallback_POC
+│  │      ├─00_Module_Index
+│  │      ├─01_POC_Test_Logs
+│  │      │  └─2026-05-30_Resend_Test
+│  │      ├─02_Screenshots
+│  │      │  └─2026-05-30_Resend_Test
+│  │      ├─03_Decision_Records
+│  │      ├─04_Provider_Notes
+│  │      └─05_Module_Specs
+│  ├─Lead_Console
+│  └─Referral
+├─03_SOP_and_QA
+│  └─Email_Emergency_Playbook
+├─04_Support_Knowledge_Base
+│  ├─Email_Delivery_Support_Log
+│  ├─Known_Issues_FAQ
+│  ├─Lovable_Support_Tickets
+│  ├─Provider_Debug_History
+│  └─Resolved_Cases
+├─05_Developer_Prompts
+│  ├─DocOps_MVP
+│  └─Email_Notification
+│      └─Fallback_POC
+├─06_Release_Notes
+├─07_Archive
+│  ├─Deprecated_Folder_Structures
+│  └─Package_Export
+├─Scripts
+└─Support
