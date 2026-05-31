@@ -1,8 +1,8 @@
-1. 不應出現 Scripts/
-2. 不應出現 Support/
-3. 不應出現 04_Support_Knowledge_Base/00_Management_Spec/
-4. 必須存在 06_Release_Notes/
-5. 必須存在 05_Developer_Prompts/Email_Notification/Fallback_POC/
-6. 不應出現 Fallback_ROC
-7. 不應出現 lead-console
-8. 不應在 02_Modules 底下出現 Developer_Prompts
+不應出現 Scripts/
+不應出現 Support/
+不應出現 04_Support_Knowledge_Base/00_Management_Spec/
+必須存在 06_Release_Notes/
+必須存在 05_Developer_Prompts/Email_Notification/Fallback_POC/
+不應出現 Fallback_ROC
+不應出現 lead-console
+不應在 02_Modules 底下出現 Developer_Prompts
