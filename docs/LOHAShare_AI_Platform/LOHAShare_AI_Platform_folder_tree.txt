@@ -1,39 +1,40 @@
-C:\Users\yuehs> cd ..\Dropbox\æ¨‚æ´»æ•´åˆè¡ŒéŠ·ç®¡ç†é¡§å•å…¬å¸\æ‹›å‹Ÿ-é€éæ‹›å•†è¨ˆç•«\2026-S2B2Cè³¦èƒ½AIç³»çµ±å¹³å°\LOHAShare_AI_Platform>
+C:\Users\yuehs> cd ..\Dropbox\¼Ö¬¡¾ã¦X¦æ¾PºŞ²zÅU°İ¤½¥q\©Û¶Ò-³z¹L©Û°Ó­pµe\2026-S2B2C½á¯àAI¨t²Î¥­¥x\LOHAShare_AI_Platform>
 
-C:\Users\yuehs\Dropbox\æ¨‚æ´»æ•´åˆè¡ŒéŠ·ç®¡ç†é¡§å•å…¬å¸\æ‹›å‹Ÿ-é€éæ‹›å•†è¨ˆç•«\2026-S2B2Cè³¦èƒ½AIç³»çµ±å¹³å°\LOHAShare_AI_Platform>tree >LOHAShare_AI_Platform_folder_tree.txt
+C:\Users\yuehs\Dropbox\¼Ö¬¡¾ã¦X¦æ¾PºŞ²zÅU°İ¤½¥q\©Û¶Ò-³z¹L©Û°Ó­pµe\2026-S2B2C½á¯àAI¨t²Î¥­¥x\LOHAShare_AI_Platform>tree >LOHAShare_AI_Platform_folder_tree.txt
 
-åˆ—å‡ºç£ç¢Ÿå€ Windows çš„è³‡æ–™å¤¾ PATH
-ç£ç¢Ÿå€åºè™Ÿç‚º 000000DD F82A:8308
+¦C¥XºÏºĞ°Ï Windows ªº¸ê®Æ§¨ PATH
+ºÏºĞ°Ï§Ç¸¹¬° 000000DD F82A:8308
 C:.
-â”œâ”€00_Index
-â”œâ”€00_Main_PRD
-â”œâ”€01_Architecture_Governance
-â”œâ”€02_Modules
-â”‚  â”œâ”€Email_Notification
-â”‚  â”‚  â””â”€Fallback_POC
-â”‚  â”‚      â”œâ”€00_Module_Index
-â”‚  â”‚      â”œâ”€01_POC_Test_Logs
-â”‚  â”‚      â”‚  â””â”€2026-05-30_Resend_Test
-â”‚  â”‚      â”œâ”€02_Screenshots
-â”‚  â”‚      â”‚  â””â”€2026-05-30_Resend_Test
-â”‚  â”‚      â”œâ”€03_Decision_Records
-â”‚  â”‚      â”œâ”€04_Provider_Notes
-â”‚  â”‚      â””â”€05_Module_Specs
-â”‚  â”œâ”€Lead_Console
-â”‚  â””â”€Referral
-â”œâ”€03_SOP_and_QA
-â”‚  â””â”€Email_Emergency_Playbook
-â”œâ”€04_Support_Knowledge_Base
-â”‚  â”œâ”€Email_Delivery_Support_Log
-â”‚  â”œâ”€Known_Issues_FAQ
-â”‚  â”œâ”€Lovable_Support_Tickets
-â”‚  â”œâ”€Provider_Debug_History
-â”‚  â””â”€Resolved_Cases
-â”œâ”€05_Developer_Prompts
-â”‚  â”œâ”€DocOps_MVP
-â”‚  â””â”€Email_Notification
-â”‚      â””â”€Fallback_POC
-â”œâ”€06_Release_Notes
-â””â”€07_Archive
-   â”œâ”€Deprecated_Folder_Structures
-   â””â”€Package_Export
+¢u¢w00_Index
+¢u¢w00_Main_PRD
+¢u¢w01_Architecture_Governance
+¢u¢w02_Modules
+¢x  ¢u¢wEmail_Notification
+¢x  ¢x  ¢|¢wFallback_POC
+¢x  ¢x      ¢u¢w00_Module_Index
+¢x  ¢x      ¢u¢w01_POC_Test_Logs
+¢x  ¢x      ¢x  ¢|¢w2026-05-30_Resend_Test
+¢x  ¢x      ¢u¢w02_Screenshots
+¢x  ¢x      ¢x  ¢|¢w2026-05-30_Resend_Test
+¢x  ¢x      ¢u¢w03_Decision_Records
+¢x  ¢x      ¢u¢w04_Provider_Notes
+¢x  ¢x      ¢|¢w05_Module_Specs
+¢x  ¢u¢wLead_Console
+¢x  ¢|¢wReferral
+¢u¢w03_SOP_and_QA
+¢x  ¢|¢wEmail_Emergency_Playbook
+¢u¢w04_Support_Knowledge_Base
+¢x  ¢u¢wEmail_Delivery_Support_Log
+¢x  ¢u¢wKnown_Issues_FAQ
+¢x  ¢u¢wLovable_Support_Tickets
+¢x  ¢u¢wProvider_Debug_History
+¢x  ¢|¢wResolved_Cases
+¢u¢w05_Developer_Prompts
+¢x  ¢u¢wDocOps_MVP
+¢x  ¢|¢wEmail_Notification
+¢x      ¢|¢wFallback_POC
+¢u¢w06_Release_Notes
+¢|¢w07_Archive
+   ¢u¢wDeprecated_Folder_Structures
+   ¢|¢wPackage_Export
+
