@@ -1,6 +1,41 @@
-手動觸發
-checkout repo
-確認 docs/LOHAShare_AI_Platform 存在
-產生 LOHAShare_AI_Platform_folder_tree.txt
-打包 docs/LOHAShare_AI_Platform 成 ZIP
-上傳 GitHub Actions artifact
+name: Docs Package
+
+on:
+  workflow_dispatch:
+
+jobs:
+  package-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Confirm docs folder exists
+        run: |
+          if [ ! -d "docs/LOHAShare_AI_Platform" ]; then
+            echo "docs/LOHAShare_AI_Platform not found"
+            exit 1
+          fi
+
+      - name: Generate folder tree
+        run: |
+          cd docs/LOHAShare_AI_Platform
+          find . -type d | sort > LOHAShare_AI_Platform_folder_tree.txt
+
+      - name: Create ZIP package
+        run: |
+          cd docs
+          zip -r LOHAShare_AI_Platform_Docs_Package.zip LOHAShare_AI_Platform
+
+      - name: Upload ZIP artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LOHAShare_AI_Platform_Docs_Package
+          path: docs/LOHAShare_AI_Platform_Docs_Package.zip
+
+      - name: Upload folder tree artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LOHAShare_AI_Platform_folder_tree
+          path: docs/LOHAShare_AI_Platform/LOHAShare_AI_Platform_folder_tree.txt
