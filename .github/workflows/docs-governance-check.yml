@@ -19,7 +19,7 @@ jobs:
         run: |
           test -d "docs/LOHAShare_AI_Platform"
 
-      - name: Check required folders
+      - name: Check required top-level folders
         run: |
           required=(
             "docs/LOHAShare_AI_Platform/00_Index"
@@ -35,12 +35,14 @@ jobs:
 
           for folder in "${required[@]}"; do
             if [ ! -d "$folder" ]; then
-              echo "Missing required folder: $folder"
+              echo "Missing required top-level folder: $folder"
               exit 1
             fi
           done
 
-      - name: Check forbidden folders and naming errors
+          echo "Top-level folder check passed."
+
+      - name: Check forbidden root folders and naming errors
         run: |
           forbidden=(
             "docs/LOHAShare_AI_Platform/Scripts"
@@ -52,12 +54,14 @@ jobs:
 
           for folder in "${forbidden[@]}"; do
             if [ -e "$folder" ]; then
-              echo "Forbidden folder exists: $folder"
+              echo "Forbidden folder or naming error exists: $folder"
               exit 1
             fi
           done
 
-      - name: Check required module folders
+          echo "Forbidden folder check passed."
+
+      - name: Check required module and prompt folders
         run: |
           required_modules=(
             "docs/LOHAShare_AI_Platform/02_Modules/Email_Notification/Fallback_POC"
@@ -74,12 +78,74 @@ jobs:
             fi
           done
 
+          echo "Module and prompt folder check passed."
+
       - name: Check Developer_Prompts is not inside 02_Modules
         run: |
           if find "docs/LOHAShare_AI_Platform/02_Modules" -type d -name "Developer_Prompts" | grep -q .; then
             echo "Developer_Prompts folder must not exist inside 02_Modules"
             exit 1
           fi
+
+          echo "Developer_Prompts placement check passed."
+
+      - name: Check Architecture Governance second-level structure
+        run: |
+          required_governance=(
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/00_Current_Index"
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/01_Document_Governance/Current"
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/01_Document_Governance/99_Archive"
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/02_Modular_Architecture/Current"
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/02_Modular_Architecture/99_Archive"
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/03_Automation_DocOps/Current"
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/03_Automation_DocOps/99_Archive"
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/04_Content_Quality_and_Consolidation/Current"
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/04_Content_Quality_and_Consolidation/99_Archive"
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/05_Support_KB_Governance/Current"
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/05_Support_KB_Governance/99_Archive"
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/06_Tooling_and_Escalation/Current"
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/06_Tooling_and_Escalation/99_Archive"
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/07_Visuals/Current"
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/07_Visuals/99_Archive"
+          )
+
+          for folder in "${required_governance[@]}"; do
+            if [ ! -d "$folder" ]; then
+              echo "Missing Architecture Governance folder: $folder"
+              exit 1
+            fi
+          done
+
+          echo "Architecture Governance second-level structure check passed."
+
+      - name: Check Architecture Governance root README files
+        run: |
+          required_files=(
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/README.md"
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance/00_Current_Index/README_Current_Governance_Index.md"
+          )
+
+          for file in "${required_files[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "Missing required governance README file: $file"
+              exit 1
+            fi
+          done
+
+          echo "Architecture Governance README check passed."
+
+      - name: Check Architecture Governance root should not contain loose governance docs
+        run: |
+          root_docs=$(find "docs/LOHAShare_AI_Platform/01_Architecture_Governance" -maxdepth 1 -type f \( -name "*.docx" -o -name "*.md" -o -name "*.png" \) ! -name "README.md" | wc -l)
+
+          if [ "$root_docs" -gt 0 ]; then
+            echo "Loose governance documents found in 01_Architecture_Governance root."
+            echo "Governance documents should be placed under topic folders Current/ or 99_Archive/."
+            find "docs/LOHAShare_AI_Platform/01_Architecture_Governance" -maxdepth 1 -type f \( -name "*.docx" -o -name "*.md" -o -name "*.png" \) ! -name "README.md"
+            exit 1
+          fi
+
+          echo "No loose governance documents found in Architecture Governance root."
 
       - name: Governance check passed
         run: |
