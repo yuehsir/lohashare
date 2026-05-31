@@ -1,0 +1,86 @@
+name: Docs Governance Check
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "docs/LOHAShare_AI_Platform/**"
+      - ".github/workflows/docs-governance-check.yml"
+
+jobs:
+  governance-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Confirm root folder exists
+        run: |
+          test -d "docs/LOHAShare_AI_Platform"
+
+      - name: Check required folders
+        run: |
+          required=(
+            "docs/LOHAShare_AI_Platform/00_Index"
+            "docs/LOHAShare_AI_Platform/00_Main_PRD"
+            "docs/LOHAShare_AI_Platform/01_Architecture_Governance"
+            "docs/LOHAShare_AI_Platform/02_Modules"
+            "docs/LOHAShare_AI_Platform/03_SOP_and_QA"
+            "docs/LOHAShare_AI_Platform/04_Support_Knowledge_Base"
+            "docs/LOHAShare_AI_Platform/05_Developer_Prompts"
+            "docs/LOHAShare_AI_Platform/06_Release_Notes"
+            "docs/LOHAShare_AI_Platform/07_Archive"
+          )
+
+          for folder in "${required[@]}"; do
+            if [ ! -d "$folder" ]; then
+              echo "Missing required folder: $folder"
+              exit 1
+            fi
+          done
+
+      - name: Check forbidden folders and naming errors
+        run: |
+          forbidden=(
+            "docs/LOHAShare_AI_Platform/Scripts"
+            "docs/LOHAShare_AI_Platform/Support"
+            "docs/LOHAShare_AI_Platform/04_Support_Knowledge_Base/00_Management_Spec"
+            "docs/LOHAShare_AI_Platform/02_Modules/lead-console"
+            "docs/LOHAShare_AI_Platform/05_Developer_Prompts/Email_Notification/Fallback_ROC"
+          )
+
+          for folder in "${forbidden[@]}"; do
+            if [ -e "$folder" ]; then
+              echo "Forbidden folder exists: $folder"
+              exit 1
+            fi
+          done
+
+      - name: Check required module folders
+        run: |
+          required_modules=(
+            "docs/LOHAShare_AI_Platform/02_Modules/Email_Notification/Fallback_POC"
+            "docs/LOHAShare_AI_Platform/02_Modules/Lead_Console"
+            "docs/LOHAShare_AI_Platform/02_Modules/Referral"
+            "docs/LOHAShare_AI_Platform/05_Developer_Prompts/DocOps_MVP"
+            "docs/LOHAShare_AI_Platform/05_Developer_Prompts/Email_Notification/Fallback_POC"
+          )
+
+          for folder in "${required_modules[@]}"; do
+            if [ ! -d "$folder" ]; then
+              echo "Missing required module/prompt folder: $folder"
+              exit 1
+            fi
+          done
+
+      - name: Check Developer_Prompts is not inside 02_Modules
+        run: |
+          if find "docs/LOHAShare_AI_Platform/02_Modules" -type d -name "Developer_Prompts" | grep -q .; then
+            echo "Developer_Prompts folder must not exist inside 02_Modules"
+            exit 1
+          fi
+
+      - name: Governance check passed
+        run: |
+          echo "LOHAShare AI Platform document governance check passed."

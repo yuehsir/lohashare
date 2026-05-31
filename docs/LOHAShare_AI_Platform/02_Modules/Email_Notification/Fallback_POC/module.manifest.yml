@@ -1,0 +1,140 @@
+manifest_version: "0.1"
+
+module:
+  name: "Email Fallback Provider POC"
+  code: "email_notification_fallback_poc"
+  path: "docs/LOHAShare_AI_Platform/02_Modules/Email_Notification/Fallback_POC"
+  level: "Level 4"
+  type: "module_derived_poc"
+  status: "planning"
+  owner: "LOHAShare"
+
+parent_context:
+  platform: "LOHAShare AI Platform"
+  main_prd: "LOHAShare AI 商務網站營運控制台"
+  first_mvp: "LOHAShare AI Lead & Notification Console MVP"
+  parent_module: "Email Notification"
+  related_subsystem:
+    - "Lead Console"
+    - "Nexus Lead Ops"
+
+positioning_rules:
+  - "This POC is a module-derived document and implementation branch."
+  - "This POC is not the main PRD."
+  - "Nexus Lead Ops is not the main PRD."
+  - "Email Fallback Provider POC must not directly modify production email flow."
+
+purpose:
+  summary: "建立獨立 Email Provider Test Console，用於測試替代 Email provider 的寄信能力與 fallback 可行性。"
+  goals:
+    - "測試 Resend、ZeptoMail、Postmark、SMTP 等 provider 的寄信能力。"
+    - "記錄每次測試的 provider response、收件端、測試時間與結果。"
+    - "協助判斷 Lovable / Mailgun / DNS / 收件端 reputation 問題。"
+    - "作為未來 Email Notification Module fallback provider 架構的驗證依據。"
+
+scope:
+  in_scope:
+    - "建立獨立 Replit Email Provider Test Console。"
+    - "支援輸入收件人、標題、內容與 provider。"
+    - "支援測試結果紀錄。"
+    - "支援匯出測試紀錄。"
+    - "支援 provider adapter 架構。"
+  out_of_scope:
+    - "不修改 Lovable production 專案。"
+    - "不修改 notify.lohashare.com DNS。"
+    - "不修改 Mailgun / Lovable Emails 主線。"
+    - "不修改 dispatchLeadNotification。"
+    - "不修改 process-email-queue。"
+    - "不直接接入正式 production email flow。"
+
+required_folders:
+  module_index: "00_Module_Index"
+  poc_test_logs: "01_POC_Test_Logs"
+  screenshots: "02_Screenshots"
+  decision_records: "03_Decision_Records"
+  provider_notes: "04_Provider_Notes"
+  module_specs: "05_Module_Specs"
+
+required_documents:
+  module_spec:
+    path: "05_Module_Specs/LOHAShare_Email_Fallback_Provider_POC_Spec_v0.3_20260530.docx"
+    status: "draft_generated"
+  decision_record:
+    path: "03_Decision_Records/Email_Fallback_POC_Decision_Record_v0.1_20260530.md"
+    status: "pending"
+  provider_test_matrix:
+    path: "01_POC_Test_Logs/Email_Fallback_Provider_Test_Matrix_v0.1_20260530.csv"
+    status: "pending"
+  known_issues_update:
+    path: "docs/LOHAShare_AI_Platform/04_Support_Knowledge_Base/Known_Issues_FAQ"
+    status: "pending"
+
+developer_prompts:
+  replit_prompt:
+    path: "docs/LOHAShare_AI_Platform/05_Developer_Prompts/Email_Notification/Fallback_POC/Replit_Email_Fallback_Provider_Test_Console_Prompt_v0.1_20260530.md"
+    status: "pending"
+  claude_review_prompt:
+    path: "docs/LOHAShare_AI_Platform/05_Developer_Prompts/Email_Notification/Fallback_POC/Claude_Email_Fallback_POC_Review_Prompt_v0.1_20260530.md"
+    status: "optional"
+
+test_plan:
+  providers:
+    - "Resend"
+    - "ZeptoMail"
+    - "Postmark"
+    - "SMTP"
+  recipient_types:
+    - "Gmail"
+    - "Yahoo"
+    - "Zoho"
+    - "Outlook"
+  expected_records:
+    - "provider"
+    - "recipient_email"
+    - "recipient_type"
+    - "subject"
+    - "sent_at"
+    - "provider_response"
+    - "delivery_status"
+    - "inbox_result"
+    - "screenshot_path"
+    - "notes"
+
+automation_readiness:
+  github_actions:
+    docs_package: true
+    governance_check: true
+    manifest_check: false
+  n8n:
+    notification_workflow: false
+    dropbox_sync: false
+  replit:
+    test_console_build: "pending"
+
+next_actions:
+  - id: "EFP-001"
+    title: "建立 Replit Email Fallback Provider Test Console 開發提示詞"
+    owner: "LOHAShare"
+    status: "next"
+  - id: "EFP-002"
+    title: "建立 Resend 測試紀錄模板"
+    owner: "LOHAShare"
+    status: "pending"
+  - id: "EFP-003"
+    title: "建立 Email Fallback POC Decision Record"
+    owner: "LOHAShare"
+    status: "pending"
+  - id: "EFP-004"
+    title: "完成第一輪 Resend / Gmail / Zoho / Yahoo / Outlook 測試"
+    owner: "LOHAShare"
+    status: "pending"
+
+review_policy:
+  generated_status_default: "draft_generated"
+  human_review_required: true
+  stable_only_after_approval: true
+  production_change_allowed: false
+
+last_updated:
+  date: "2026-05-30"
+  version: "v0.1"

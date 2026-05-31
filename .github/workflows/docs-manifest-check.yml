@@ -1,0 +1,134 @@
+name: Docs Manifest Check
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "docs/LOHAShare_AI_Platform/02_Modules/**/module.manifest.yml"
+      - ".github/workflows/docs-manifest-check.yml"
+
+jobs:
+  manifest-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Confirm Email Fallback POC manifest exists
+        run: |
+          MANIFEST_PATH="docs/LOHAShare_AI_Platform/02_Modules/Email_Notification/Fallback_POC/module.manifest.yml"
+
+          if [ ! -f "$MANIFEST_PATH" ]; then
+            echo "Missing manifest file: $MANIFEST_PATH"
+            exit 1
+          fi
+
+          echo "Manifest file found: $MANIFEST_PATH"
+
+      - name: Check required top-level manifest fields
+        run: |
+          MANIFEST_PATH="docs/LOHAShare_AI_Platform/02_Modules/Email_Notification/Fallback_POC/module.manifest.yml"
+
+          required_fields=(
+            "manifest_version:"
+            "module:"
+            "parent_context:"
+            "positioning_rules:"
+            "purpose:"
+            "scope:"
+            "required_folders:"
+            "required_documents:"
+            "developer_prompts:"
+            "test_plan:"
+            "automation_readiness:"
+            "next_actions:"
+            "review_policy:"
+            "last_updated:"
+          )
+
+          for field in "${required_fields[@]}"; do
+            if ! grep -q "$field" "$MANIFEST_PATH"; then
+              echo "Missing required field: $field"
+              exit 1
+            fi
+          done
+
+          echo "All required top-level fields exist."
+
+      - name: Check main PRD positioning rule
+        run: |
+          MANIFEST_PATH="docs/LOHAShare_AI_Platform/02_Modules/Email_Notification/Fallback_POC/module.manifest.yml"
+
+          if ! grep -q "LOHAShare AI 商務網站營運控制台" "$MANIFEST_PATH"; then
+            echo "Missing main PRD reference: LOHAShare AI 商務網站營運控制台"
+            exit 1
+          fi
+
+          if ! grep -q "Nexus Lead Ops is not the main PRD" "$MANIFEST_PATH"; then
+            echo "Missing positioning rule: Nexus Lead Ops is not the main PRD"
+            exit 1
+          fi
+
+          echo "Main PRD positioning rules passed."
+
+      - name: Check production safety boundaries
+        run: |
+          MANIFEST_PATH="docs/LOHAShare_AI_Platform/02_Modules/Email_Notification/Fallback_POC/module.manifest.yml"
+
+          safety_rules=(
+            "不修改 Lovable production 專案"
+            "不修改 notify.lohashare.com DNS"
+            "不修改 Mailgun / Lovable Emails 主線"
+            "不直接接入正式 production email flow"
+          )
+
+          for rule in "${safety_rules[@]}"; do
+            if ! grep -q "$rule" "$MANIFEST_PATH"; then
+              echo "Missing production safety rule: $rule"
+              exit 1
+            fi
+          done
+
+          echo "Production safety boundaries passed."
+
+      - name: Check developer prompts path governance
+        run: |
+          MANIFEST_PATH="docs/LOHAShare_AI_Platform/02_Modules/Email_Notification/Fallback_POC/module.manifest.yml"
+
+          if ! grep -q "docs/LOHAShare_AI_Platform/05_Developer_Prompts/Email_Notification/Fallback_POC" "$MANIFEST_PATH"; then
+            echo "Developer prompts must point to 05_Developer_Prompts/Email_Notification/Fallback_POC"
+            exit 1
+          fi
+
+          if grep -q "02_Modules/.*/Developer_Prompts" "$MANIFEST_PATH"; then
+            echo "Invalid prompt path: Developer_Prompts must not be inside 02_Modules"
+            exit 1
+          fi
+
+          echo "Developer prompt path governance passed."
+
+      - name: Check review policy
+        run: |
+          MANIFEST_PATH="docs/LOHAShare_AI_Platform/02_Modules/Email_Notification/Fallback_POC/module.manifest.yml"
+
+          if ! grep -q 'generated_status_default: "draft_generated"' "$MANIFEST_PATH"; then
+            echo "Missing review policy: generated_status_default must be draft_generated"
+            exit 1
+          fi
+
+          if ! grep -q "human_review_required: true" "$MANIFEST_PATH"; then
+            echo "Missing review policy: human_review_required must be true"
+            exit 1
+          fi
+
+          if ! grep -q "production_change_allowed: false" "$MANIFEST_PATH"; then
+            echo "Missing review policy: production_change_allowed must be false"
+            exit 1
+          fi
+
+          echo "Review policy passed."
+
+      - name: Manifest check passed
+        run: |
+          echo "LOHAShare AI Platform module manifest check passed."
