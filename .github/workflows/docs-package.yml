@@ -1,0 +1,6 @@
+1. 手動觸發
+2. checkout repo
+3. 確認 docs/LOHAShare_AI_Platform 存在
+4. 產生 LOHAShare_AI_Platform_folder_tree.txt
+5. 打包 docs/LOHAShare_AI_Platform 成 ZIP
+6. 上傳 GitHub Actions artifact
