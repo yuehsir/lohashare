@@ -1,0 +1,31 @@
+# Architecture Governance File Move Map v0.1
+
+| 原檔名 | 目標資料夾 | 狀態 |
+|---|---|---|
+| `LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.8_20260530.docx` | `01_Architecture_Governance/01_Document_Governance/Current/` | Current |
+| `LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.0_20260530.docx` | `01_Architecture_Governance/01_Document_Governance/99_Archive/` | Archived old version |
+| `LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.1_20260530.docx` | `01_Architecture_Governance/01_Document_Governance/99_Archive/` | Archived old version |
+| `LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.2_20260530.docx` | `01_Architecture_Governance/01_Document_Governance/99_Archive/` | Archived old version |
+| `LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.3_20260530.docx` | `01_Architecture_Governance/01_Document_Governance/99_Archive/` | Archived old version |
+| `LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.4_20260530.docx` | `01_Architecture_Governance/01_Document_Governance/99_Archive/` | Archived old version |
+| `LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.5_20260530.docx` | `01_Architecture_Governance/01_Document_Governance/99_Archive/` | Archived old version |
+| `LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.6_20260530.docx` | `01_Architecture_Governance/01_Document_Governance/99_Archive/` | Archived old version |
+| `LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.7_20260530.docx` | `01_Architecture_Governance/01_Document_Governance/99_Archive/` | Archived old version |
+| `LOHAShare_AI_Platform_Document_Governance_Rules_v0.2_20260530.md` | `01_Architecture_Governance/01_Document_Governance/Current/` | Current |
+| `LOHAShare_AI_Platform_Folder_and_File_Management_Rules_v1.2_20260530.docx` | `01_Architecture_Governance/01_Document_Governance/Current/` | Current |
+| `LOHAShare_AI_Platform_Folder_and_File_Management_Rules_v1.0_20260530.docx` | `01_Architecture_Governance/01_Document_Governance/99_Archive/` | Archived old version |
+| `LOHAShare_AI_Platform_Folder_and_File_Management_Rules_v1.1_20260530.docx` | `01_Architecture_Governance/01_Document_Governance/99_Archive/` | Archived old version |
+| `LOHAShare_AI_Platform_Document_Format_Strategy_v0.1_20260601.docx` | `01_Architecture_Governance/01_Document_Governance/Current/` | Current |
+| `LOHAShare_AI_Platform_Document_Format_Strategy_v0.1_20260601.md` | `01_Architecture_Governance/01_Document_Governance/Current/` | Current |
+| `LOHAShare_AI_Platform_Modular_Architecture_Governance_v1.2_Naming_Hierarchy_Update_20260530.docx` | `01_Architecture_Governance/02_Modular_Architecture/Current/` | Current |
+| `LOHAShare_AI_Platform_Modular_Architecture_Governance_v1.0_20260530.docx` | `01_Architecture_Governance/02_Modular_Architecture/99_Archive/` | Archived old version |
+| `LOHAShare_AI_Platform_Modular_Architecture_Governance_v1.1_Operational_Resilience_Update_20260530.docx` | `01_Architecture_Governance/02_Modular_Architecture/99_Archive/` | Archived old version |
+| `LOHAShare_AI_Platform_Automation_Strategy_and_DocOps_Roadmap_v1.3_20260530.docx` | `01_Architecture_Governance/03_Automation_DocOps/Current/` | Current |
+| `LOHAShare_AI_Platform_Automation_Strategy_and_DocOps_Roadmap_v1.0_20260530.docx` | `01_Architecture_Governance/03_Automation_DocOps/99_Archive/` | Archived old version |
+| `LOHAShare_AI_Platform_Automation_Strategy_and_DocOps_Roadmap_v1.1_20260530.docx` | `01_Architecture_Governance/03_Automation_DocOps/99_Archive/` | Archived old version |
+| `LOHAShare_AI_Platform_Automation_Strategy_and_DocOps_Roadmap_v1.2_20260530.docx` | `01_Architecture_Governance/03_Automation_DocOps/99_Archive/` | Archived old version |
+| `LOHAShare_AI_Platform_Document_Consolidation_Plan_v0.1_20260530.docx` | `01_Architecture_Governance/04_Content_Quality_and_Consolidation/Current/` | Current |
+| `LOHAShare_AI_Platform_Document_Content_Quality_Rules_v0.1_20260530.docx` | `01_Architecture_Governance/04_Content_Quality_and_Consolidation/Current/` | Current |
+| `LOHAShare_AI_Platform_Support_Knowledge_Base_Management_Spec_v1.0_20260530.docx` | `01_Architecture_Governance/05_Support_KB_Governance/Current/` | Current |
+| `LOHAShare_Engineering_Escalation_and_Tooling_Decision_Guide_v0.1_20260530.docx` | `01_Architecture_Governance/06_Tooling_and_Escalation/Current/` | Current |
+| `lohashare_ai_命名層級架構圖.png` | `01_Architecture_Governance/07_Visuals/Current/` | Current |
