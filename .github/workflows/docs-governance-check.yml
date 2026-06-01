@@ -161,6 +161,39 @@ jobs:
 
           echo "Developer_Prompts placement check passed."
 
+      - name: Check Developer Prompts Current and Archive structure
+        run: |
+          required_prompt_structure=(
+            "docs/LOHAShare_AI_Platform/05_Developer_Prompts/DocOps_MVP/Current"
+            "docs/LOHAShare_AI_Platform/05_Developer_Prompts/DocOps_MVP/99_Archive"
+            "docs/LOHAShare_AI_Platform/05_Developer_Prompts/Email_Notification/Fallback_POC/Current"
+            "docs/LOHAShare_AI_Platform/05_Developer_Prompts/Email_Notification/Fallback_POC/99_Archive"
+          )
+
+          for folder in "${required_prompt_structure[@]}"; do
+            if [ ! -d "$folder" ]; then
+              echo "Missing Developer Prompts folder: $folder"
+              exit 1
+            fi
+          done
+
+          required_prompt_readmes=(
+            "docs/LOHAShare_AI_Platform/05_Developer_Prompts/README.md"
+            "docs/LOHAShare_AI_Platform/05_Developer_Prompts/DocOps_MVP/Current/README.txt"
+            "docs/LOHAShare_AI_Platform/05_Developer_Prompts/DocOps_MVP/99_Archive/README.txt"
+            "docs/LOHAShare_AI_Platform/05_Developer_Prompts/Email_Notification/Fallback_POC/Current/README.txt"
+            "docs/LOHAShare_AI_Platform/05_Developer_Prompts/Email_Notification/Fallback_POC/99_Archive/README.txt"
+          )
+
+          for file in "${required_prompt_readmes[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "Missing Developer Prompts README file: $file"
+              exit 1
+            fi
+          done
+
+          echo "Developer Prompts Current / 99_Archive structure check passed."
+          
       - name: Check Architecture Governance second-level structure
         run: |
           required_governance=(
@@ -244,6 +277,20 @@ jobs:
           fi
 
           echo "No loose governance documents found in Architecture Governance root."
+
+      - name: Check Developer Prompts root should not contain loose helper files
+        run: |
+          loose_prompt_root_files=$(find "docs/LOHAShare_AI_Platform/05_Developer_Prompts" -maxdepth 1 -type f \( -name "*.docx" -o -name "*.md" -o -name "*.csv" -o -name "*.bat" -o -name "*.ps1" \) ! -name "README.md" | wc -l)
+
+          if [ "$loose_prompt_root_files" -gt 0 ]; then
+            echo "Loose files found in 05_Developer_Prompts root."
+            echo "Developer prompt files should be placed under each prompt category Current/ or 99_Archive/."
+            echo "Helper files should be archived under 07_Archive/Package_Export."
+            find "docs/LOHAShare_AI_Platform/05_Developer_Prompts" -maxdepth 1 -type f \( -name "*.docx" -o -name "*.md" -o -name "*.csv" -o -name "*.bat" -o -name "*.ps1" \) ! -name "README.md"
+            exit 1
+          fi
+
+          echo "No loose files found in Developer Prompts root."
 
       - name: Governance check passed
         run: |
