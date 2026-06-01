@@ -41,7 +41,36 @@ jobs:
           done
 
           echo "Top-level folder check passed."
+          
+      - name: Check 00_Index Current and Archive structure
+        run: |
+          required_index=(
+            "docs/LOHAShare_AI_Platform/00_Index/Current"
+            "docs/LOHAShare_AI_Platform/00_Index/99_Archive"
+          )
 
+          for folder in "${required_index[@]}"; do
+            if [ ! -d "$folder" ]; then
+              echo "Missing 00_Index folder: $folder"
+              exit 1
+            fi
+          done
+
+          required_index_files=(
+            "docs/LOHAShare_AI_Platform/00_Index/README.md"
+            "docs/LOHAShare_AI_Platform/00_Index/Current/README.txt"
+            "docs/LOHAShare_AI_Platform/00_Index/99_Archive/README.txt"
+          )
+
+          for file in "${required_index_files[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "Missing 00_Index README file: $file"
+              exit 1
+            fi
+          done
+
+          echo "00_Index Current / 99_Archive structure check passed."
+          
       - name: Check forbidden root folders and naming errors
         run: |
           forbidden=(
@@ -146,6 +175,19 @@ jobs:
           fi
 
           echo "No loose governance documents found in Architecture Governance root."
+          
+      - name: Check 00_Index root should not contain loose index documents
+        run: |
+          loose_index_docs=$(find "docs/LOHAShare_AI_Platform/00_Index" -maxdepth 1 -type f \( -name "*.docx" -o -name "*.md" \) ! -name "README.md" | wc -l)
+
+          if [ "$loose_index_docs" -gt 0 ]; then
+            echo "Loose index documents found in 00_Index root."
+            echo "Index documents should be placed under Current/ or 99_Archive/."
+            find "docs/LOHAShare_AI_Platform/00_Index" -maxdepth 1 -type f \( -name "*.docx" -o -name "*.md" \) ! -name "README.md"
+            exit 1
+          fi
+
+          echo "No loose index documents found in 00_Index root."
 
       - name: Governance check passed
         run: |
