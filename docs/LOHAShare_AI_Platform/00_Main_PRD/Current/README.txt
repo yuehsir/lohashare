@@ -1,0 +1,6 @@
+# Current
+
+此資料夾放目前正式可引用的主 PRD 最新版。
+
+目前確認最新版：
+LOHAShare_AI_Business_Website_Operation_Console_PRD_v1.5_Naming_Hierarchy_Update_20260530.docx

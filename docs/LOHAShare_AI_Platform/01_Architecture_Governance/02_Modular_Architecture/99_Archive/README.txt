@@ -1,8 +1,6 @@
-# README
+# 02_Modular_Architecture / 99_Archive
 
-此資料夾為 LOHAShare AI Platform 架構治理重整後的分類資料夾。
+此資料夾放模組化架構治理文件的舊版或歷史版本。
 
-規則：
-- Current/：只放目前正式可引用版本。
-- 99_Archive/：放同一主題的舊版本，不跨主題混放。
-- 若文件尚未確認最新版，請先不要放入 Current/，可暫放 99_Archive/ 或等待人工確認。
+本次從 00_Main_PRD 移出的文件：
+- LOHAShare_AI_Platform_Modular_Architecture_Governance_v1.0_20260530.docx

@@ -1,0 +1,13 @@
+# 00_Main_PRD File Move Map v0.1
+
+此檔案為 00_Main_PRD 重整搬移對照表。
+
+| 原檔名 | 目標資料夾 | 理由 |
+|---|---|---|
+| `LOHAShare_AI_Business_Website_Operation_Console_PRD_v1.5_Naming_Hierarchy_Update_20260530.docx` | `00_Main_PRD/Current/` | 目前已確認為主 PRD 正式最新版 |
+| `LOHAShare AI 商務網站營運控制台 PRD v1.1.docx` | `00_Main_PRD/99_Archive/` | 主 PRD 舊版 |
+| `LOHAShare AI 商務網站營運控制台 PRD v1.2 — 需求釐清後版本.docx` | `00_Main_PRD/99_Archive/` | 主 PRD 舊版，保留作為需求釐清基準歷史 |
+| `LOHAShare AI 商務網站營運控制台 PRD v1.3.docx` | `00_Main_PRD/99_Archive/` | 主 PRD 舊版 |
+| `LOHAShare_AI_Business_Website_Operation_Console_PRD_v1.3_full_v1.2_retained_20260530.docx` | `00_Main_PRD/99_Archive/` | 主 PRD 舊版，v1.2 全文保留整合版 |
+| `LOHAShare_AI_Business_Website_Operation_Console_PRD_v1.4_Modular_Governance_Update_20260530.docx` | `00_Main_PRD/99_Archive/` | 主 PRD 舊版，模組化治理更新版 |
+| `LOHAShare_AI_Platform_Modular_Architecture_Governance_v1.0_20260530.docx` | `01_Architecture_Governance/02_Modular_Architecture/99_Archive/` | 非主 PRD，應移至模組化架構治理分類 |
