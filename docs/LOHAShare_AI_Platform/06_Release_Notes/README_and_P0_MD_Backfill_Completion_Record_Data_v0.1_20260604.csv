@@ -1,0 +1,8 @@
+﻿metric,value
+Total files,215
+Total folders audited,68
+Missing README folders,0
+Blank README files,0
+DOCX without MD pairs,68
+MD without DOCX pairs,47
+Paired DOCX / MD,14
