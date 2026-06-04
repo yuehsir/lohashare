@@ -1,0 +1,184 @@
+name: Docs Inventory Audit
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "docs/LOHAShare_AI_Platform/**"
+      - ".github/workflows/docs-inventory.yml"
+
+jobs:
+  inventory-audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate folder tree and document inventory
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import csv
+          import os
+          from collections import defaultdict
+
+          ROOT = Path("docs/LOHAShare_AI_Platform")
+          OUT = Path("audit-output")
+          OUT.mkdir(exist_ok=True)
+
+          if not ROOT.exists():
+              raise SystemExit("docs/LOHAShare_AI_Platform does not exist")
+
+          def rel(path: Path) -> str:
+              return path.as_posix()
+
+          # 1. UTF-8 folder tree with directories and files
+          tree_lines = []
+          tree_lines.append("LOHAShare_AI_Platform folder tree audit")
+          tree_lines.append("Root: docs/LOHAShare_AI_Platform")
+          tree_lines.append("")
+
+          def walk_tree(path: Path, prefix=""):
+              entries = sorted(path.iterdir(), key=lambda p: (not p.is_dir(), p.name.lower()))
+              for index, entry in enumerate(entries):
+                  connector = "└── " if index == len(entries) - 1 else "├── "
+                  tree_lines.append(prefix + connector + entry.name + ("/" if entry.is_dir() else ""))
+                  if entry.is_dir():
+                      extension = "    " if index == len(entries) - 1 else "│   "
+                      walk_tree(entry, prefix + extension)
+
+          walk_tree(ROOT)
+          (OUT / "LOHAShare_AI_Platform_folder_tree_utf8.txt").write_text("\n".join(tree_lines) + "\n", encoding="utf-8")
+
+          # 2. File inventory CSV
+          inventory_rows = []
+          for p in sorted(ROOT.rglob("*")):
+              if p.is_file():
+                  stat = p.stat()
+                  inventory_rows.append({
+                      "path": rel(p),
+                      "folder": rel(p.parent),
+                      "filename": p.name,
+                      "extension": p.suffix.lower(),
+                      "size_bytes": stat.st_size,
+                      "is_readme": p.name.lower() in {"readme.md", "readme.txt"},
+                  })
+
+          with (OUT / "LOHAShare_AI_Platform_file_inventory.csv").open("w", encoding="utf-8-sig", newline="") as f:
+              writer = csv.DictWriter(f, fieldnames=["path", "folder", "filename", "extension", "size_bytes", "is_readme"])
+              writer.writeheader()
+              writer.writerows(inventory_rows)
+
+          # 3. README audit CSV: check every folder for README.md or README.txt and blank README
+          readme_rows = []
+          for d in sorted([p for p in ROOT.rglob("*") if p.is_dir()] + [ROOT]):
+              readme_md = d / "README.md"
+              readme_txt = d / "README.txt"
+              has_md = readme_md.exists()
+              has_txt = readme_txt.exists()
+              readme_path = ""
+              readme_size = ""
+              readme_status = "missing"
+              if has_md:
+                  readme_path = rel(readme_md)
+                  readme_size = readme_md.stat().st_size
+                  readme_status = "present_md" if readme_size > 0 else "blank_md"
+              elif has_txt:
+                  readme_path = rel(readme_txt)
+                  readme_size = readme_txt.stat().st_size
+                  readme_status = "present_txt" if readme_size > 0 else "blank_txt"
+
+              child_files = [p for p in d.iterdir() if p.is_file()]
+              child_dirs = [p for p in d.iterdir() if p.is_dir()]
+              readme_rows.append({
+                  "folder": rel(d),
+                  "has_readme_md": has_md,
+                  "has_readme_txt": has_txt,
+                  "readme_path": readme_path,
+                  "readme_size_bytes": readme_size,
+                  "readme_status": readme_status,
+                  "file_count_direct": len(child_files),
+                  "folder_count_direct": len(child_dirs),
+                  "is_effectively_empty_without_readme": (len([p for p in child_files if p.name.lower() not in {"readme.md", "readme.txt"}]) == 0 and len(child_dirs) == 0),
+              })
+
+          with (OUT / "LOHAShare_AI_Platform_readme_audit.csv").open("w", encoding="utf-8-sig", newline="") as f:
+              writer = csv.DictWriter(f, fieldnames=[
+                  "folder", "has_readme_md", "has_readme_txt", "readme_path", "readme_size_bytes",
+                  "readme_status", "file_count_direct", "folder_count_direct", "is_effectively_empty_without_readme"
+              ])
+              writer.writeheader()
+              writer.writerows(readme_rows)
+
+          # 4. DOCX / MD pairing audit
+          by_stem = defaultdict(lambda: {"docx": [], "md": []})
+          for row in inventory_rows:
+              ext = row["extension"]
+              if ext in {".docx", ".md"}:
+                  stem = Path(row["filename"]).stem
+                  by_stem[(row["folder"], stem)][ext.lstrip(".")].append(row["path"])
+
+          pairing_rows = []
+          for (folder, stem), data in sorted(by_stem.items()):
+              docx_paths = data["docx"]
+              md_paths = data["md"]
+              if docx_paths or md_paths:
+                  if docx_paths and md_paths:
+                      status = "paired"
+                  elif docx_paths and not md_paths:
+                      status = "docx_without_md"
+                  else:
+                      status = "md_without_docx"
+                  pairing_rows.append({
+                      "folder": folder,
+                      "stem": stem,
+                      "status": status,
+                      "docx_paths": " | ".join(docx_paths),
+                      "md_paths": " | ".join(md_paths),
+                  })
+
+          with (OUT / "LOHAShare_AI_Platform_docx_md_pairing_audit.csv").open("w", encoding="utf-8-sig", newline="") as f:
+              writer = csv.DictWriter(f, fieldnames=["folder", "stem", "status", "docx_paths", "md_paths"])
+              writer.writeheader()
+              writer.writerows(pairing_rows)
+
+          # 5. Markdown summary
+          missing_readmes = [r for r in readme_rows if r["readme_status"] == "missing"]
+          blank_readmes = [r for r in readme_rows if str(r["readme_status"]).startswith("blank")]
+          docx_without_md = [r for r in pairing_rows if r["status"] == "docx_without_md"]
+          md_without_docx = [r for r in pairing_rows if r["status"] == "md_without_docx"]
+
+          summary = []
+          summary.append("# LOHAShare AI Platform Inventory Audit Summary")
+          summary.append("")
+          summary.append("This workflow is read-only. It does not modify repository files.")
+          summary.append("")
+          summary.append("## Counts")
+          summary.append(f"- Total files: {len(inventory_rows)}")
+          summary.append(f"- Total folders audited: {len(readme_rows)}")
+          summary.append(f"- Missing README folders: {len(missing_readmes)}")
+          summary.append(f"- Blank README files: {len(blank_readmes)}")
+          summary.append(f"- DOCX without MD pairs: {len(docx_without_md)}")
+          summary.append(f"- MD without DOCX pairs: {len(md_without_docx)}")
+          summary.append("")
+          summary.append("## Outputs")
+          summary.append("- LOHAShare_AI_Platform_folder_tree_utf8.txt")
+          summary.append("- LOHAShare_AI_Platform_file_inventory.csv")
+          summary.append("- LOHAShare_AI_Platform_readme_audit.csv")
+          summary.append("- LOHAShare_AI_Platform_docx_md_pairing_audit.csv")
+          summary.append("- LOHAShare_AI_Platform_inventory_audit_summary.md")
+          (OUT / "LOHAShare_AI_Platform_inventory_audit_summary.md").write_text("\n".join(summary) + "\n", encoding="utf-8")
+
+          print("Inventory audit generated successfully.")
+          print(f"Total files: {len(inventory_rows)}")
+          print(f"Missing README folders: {len(missing_readmes)}")
+          print(f"Blank README files: {len(blank_readmes)}")
+          print(f"DOCX without MD pairs: {len(docx_without_md)}")
+          PY
+
+      - name: Upload inventory audit artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LOHAShare_AI_Platform_inventory_audit
+          path: audit-output/
