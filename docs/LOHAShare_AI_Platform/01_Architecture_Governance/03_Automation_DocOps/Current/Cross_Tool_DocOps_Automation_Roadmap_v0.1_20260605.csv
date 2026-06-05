@@ -1,0 +1,8 @@
+﻿phase,resource,role,automation_opportunity,status
+Phase 1,GitHub Actions,Read-only audit engine,docs-intake-audit.yml + intake_audit.py,next
+Phase 2,Replit,Document processing worker,Generate README/MD/Release Note draft packages,planned
+Phase 3,Resend,Notification layer,Send audit complete/fail/action-required emails,planned
+Phase 4,GitHub API,PR draft layer,"Create branch and PR draft, no direct master write",planned
+Phase 5,Lovable,DocOps Console UI,"Review audit results, approve package/PR",future
+Phase 6,Zoho API,Task/CRM layer,Create tasks for action required items,future
+Phase 6,NotebookLM,Knowledge/query layer,Query current documents and decisions,future

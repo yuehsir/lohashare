@@ -1,0 +1,7 @@
+﻿phase,item,deliverable,status,notes
+v0.1,Create docs-intake-audit.yml,GitHub Actions workflow,planned,Read-only artifact generation
+v0.1,Create scripts/docops/intake_audit.py,Python audit script,planned,Classify files and suggest placement
+v0.1,Generate CSV report,new_document_intake_audit.csv,planned,Machine-readable result
+v0.1,Generate Markdown report,new_document_intake_audit_report.md,planned,Human-readable result
+v0.2,Generate draft backfill package,artifact only,future,No direct write to repo
+v0.3,Open PR or branch,draft PR,future,Requires human approval

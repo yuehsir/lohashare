@@ -1,0 +1,166 @@
+{
+  "schema_version": "0.1",
+  "artifact_type": "github_archive_candidate",
+  "generated_at": "2026-06-05T10:00:00+08:00",
+  "status": "draft_archive_candidate_not_written_to_github",
+  "conversation": {
+    "name": "LOHAShare Email Fallback Provider Test Console",
+    "productized_name": "LOHAShare Email Fallback Provider Test Console",
+    "summary": "Email provider fallback POC, Replit diagnostic console, Resend/Zoho SMTP provider validation, Lovable Email Provider Router pre-cutover work, support/debug context, and archive candidate preparation."
+  },
+  "governance_basis": {
+    "working_root": "docs/LOHAShare_AI_Platform/",
+    "index_entry": "00_Index/Current/",
+    "governance_entry": "01_Architecture_Governance/<Topic>/Current/",
+    "main_prd_entry": "00_Main_PRD/Current/",
+    "developer_prompts_entry": "05_Developer_Prompts/<Category>/Current/",
+    "github_repo_tree_verified": false,
+    "verification_note": "Not actually verified against GitHub repo tree. Candidate paths are based on user-provided governance baseline and conversation content."
+  },
+  "classification": {
+    "level_0": "LOHAShare AI Platform",
+    "level_1": "LOHAShare AI 商務網站營運控制台",
+    "level_2": "LOHAShare AI Lead & Notification Console MVP",
+    "level_3_module": "Email Notification",
+    "level_4_types": [
+      "Fallback POC",
+      "Provider Notes",
+      "Developer Prompt",
+      "Test Log",
+      "Debug Log",
+      "Support Log",
+      "Decision Record",
+      "Release Note",
+      "SOP/QA"
+    ]
+  },
+  "confirmed_decisions": [
+    "Do not wait for Lovable/Mailgun as the only solution.",
+    "Keep Replit Email Test Console as an independent diagnostic tool, not production router.",
+    "Use Resend + send.lohashare.com as Primary Provider candidate.",
+    "Use Zoho SMTP + tech@lohashare.com as Secondary/Backup Provider candidate.",
+    "Keep auth_emails on legacy Lovable Emails in Phase 1.",
+    "Keep EMAIL_PROVIDER_ROUTER_ENABLED=false until explicit production cutover.",
+    "Keep EMAIL_ROUTER_TEST_ENABLED=false after verification.",
+    "Keep EMAIL_FALLBACK_ENABLED=false/unset until Zoho fallback is approved.",
+    "Do not enable global router flag because Preview and Production share backend, queue, cron and secrets.",
+    "Unsubscribe route safety patch: GET only confirmation, POST performs suppression."
+  ],
+  "test_results": {
+    "replit_provider_console": {
+      "resend_onboarding": "success",
+      "resend_send_lohashare_to_gmail": "success",
+      "resend_send_lohashare_to_zoho": "success",
+      "resend_send_lohashare_to_yahoo": "success",
+      "resend_send_lohashare_to_outlook": "success",
+      "zoho_smtp_tech_lohashare": "success",
+      "csv_export": "success"
+    },
+    "lovable_main_project": {
+      "router_skeleton_dark_mode": "complete",
+      "resend_adapter": "complete",
+      "admin_only_resend_adapter_live_verification": "success",
+      "admin_only_router_dispatcher_smoke_test": "success",
+      "unsubscribe_route": "created",
+      "unsubscribe_route_safety_patch": "complete",
+      "zoho_smtp_edge_function": "not_started",
+      "production_cutover": "not_started"
+    }
+  },
+  "candidate_paths": {
+    "module_fallback_poc": "docs/LOHAShare_AI_Platform/02_Modules/Email_Notification/Fallback_POC/",
+    "developer_prompts": "docs/LOHAShare_AI_Platform/05_Developer_Prompts/Email_Notification/Fallback_POC/Current/",
+    "provider_test_logs": "docs/LOHAShare_AI_Platform/02_Modules/Email_Notification/Fallback_POC/Test_Logs/",
+    "provider_notes": "docs/LOHAShare_AI_Platform/02_Modules/Email_Notification/Fallback_POC/Provider_Notes/",
+    "support_log": "docs/LOHAShare_AI_Platform/04_Support_Knowledge_Base/Email_Delivery_Support_Log/",
+    "debug_history": "docs/LOHAShare_AI_Platform/04_Support_Knowledge_Base/Provider_Debug_History/",
+    "release_notes": "docs/LOHAShare_AI_Platform/06_Release_Notes/"
+  },
+  "path_conflicts": [
+    {
+      "conflict": "Productized name used as potential module folder",
+      "resolution": "Treat LOHAShare Email Fallback Provider Test Console as Email Notification Level 4 Fallback POC, not Level 3 module."
+    },
+    {
+      "conflict": "Developer Prompts under module folder",
+      "resolution": "Developer Prompt originals belong under 05_Developer_Prompts, not 02_Modules."
+    },
+    {
+      "conflict": "Email_Notification/Fallback_POC path not yet GitHub-verified",
+      "resolution": "Mark as candidate path until GitHub repo tree is verified."
+    }
+  ],
+  "archive_documents_recommended": [
+    {
+      "title": "Email Fallback POC Decision Record",
+      "filename": "Email_Notification_Fallback_POC_Decision_Record_v0.1_20260605.md",
+      "type": "Decision Record",
+      "status": "draft_recommended"
+    },
+    {
+      "title": "Provider Test Log Summary",
+      "filename": "Email_Notification_Provider_Test_Log_Summary_v0.1_20260605.md",
+      "type": "Test Log",
+      "status": "draft_recommended"
+    },
+    {
+      "title": "Resend / Zoho SMTP Provider Notes",
+      "filename": "Email_Notification_Provider_Notes_Resend_Zoho_SMTP_v0.1_20260605.md",
+      "type": "Provider Notes",
+      "status": "draft_recommended"
+    },
+    {
+      "title": "Developer Prompt Index / Prompt Pack",
+      "filename": "Email_Notification_Fallback_POC_Developer_Prompt_Index_v0.1_20260605.md",
+      "type": "Developer Prompt Index",
+      "status": "draft_recommended"
+    },
+    {
+      "title": "Lovable / Mailgun Debug & Support Log",
+      "filename": "Email_Delivery_Debug_Support_Log_Lovable_Mailgun_Resend_v0.1_20260605.md",
+      "type": "Debug Support Log",
+      "status": "draft_recommended"
+    },
+    {
+      "title": "Email Fallback Provider POC Release Note",
+      "filename": "Email_Notification_Fallback_POC_Release_Note_v0.1_20260605.md",
+      "type": "Release Note",
+      "status": "optional_draft_recommended"
+    }
+  ],
+  "developer_prompts_identified": [
+    "Replit Email Fallback Provider Test Console Initial Prompt",
+    "Replit Test History Status Logic Bugfix Prompt",
+    "Lovable Analyze Nexus Lead Ops Email Architecture Prompt",
+    "Lovable Email Provider Router phased build prompts",
+    "Step 1 Router Skeleton Dark Mode Prompt",
+    "Step 2A Resend Adapter Prompt",
+    "Step 2A Verify Admin-only Prompt",
+    "Step 2B Router Wiring Prompt",
+    "Step 2B Safety Patch Prompt",
+    "Admin-only Router Smoke Test Prompt",
+    "Unsubscribe Route Build Prompt",
+    "Unsubscribe Route Safety Patch Prompt",
+    "Lovable safe pause checkpoint Prompt",
+    "Replit diagnostic pause checkpoint Prompt",
+    "Main project handoff prompt"
+  ],
+  "safe_current_state": {
+    "EMAIL_PROVIDER_ROUTER_ENABLED": "false",
+    "EMAIL_ROUTER_TEST_ENABLED": "false",
+    "EMAIL_FALLBACK_ENABLED": "false_or_unset",
+    "auth_emails": "legacy_lovable_emails",
+    "transactional_emails": "legacy_lovable_emails_while_router_flag_false",
+    "production_cutover": "not_performed",
+    "zoho_edge_function": "not_created",
+    "replit_console_role": "diagnostic_tool_only"
+  },
+  "recommended_commit_message": "docs(email-notification): add email fallback provider POC governance sync archive candidates",
+  "github_write_status": {
+    "written_to_github": false,
+    "commit_created": false,
+    "pr_created": false,
+    "archive_bot_executed": false
+  },
+  "next_step_prompt": "請直接執行下一步，根據《LOHAShare Email Fallback Provider Test Console 對話治理同步與歸檔候選清單 v0.1》，拆分產生 Decision Record、Provider Notes、Developer Prompt Index、Test Log、Support Log 與 Release Note 的 Markdown 草稿，並產生對應 GitHub Archive JSON；不得宣稱已寫入 GitHub、不得宣稱已 commit、不得建立 PR。"
+}
