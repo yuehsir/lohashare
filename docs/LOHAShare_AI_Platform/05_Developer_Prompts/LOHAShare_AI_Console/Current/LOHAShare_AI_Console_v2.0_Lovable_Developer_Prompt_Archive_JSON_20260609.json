@@ -1,0 +1,39 @@
+{
+  "archive_package": "LOHAShare_AI_Console_v2.0_Lovable_Developer_Prompt_Candidate_20260609",
+  "status": "materials_generated_not_committed",
+  "generated_at": "2026-06-09T00:25:00+08:00",
+  "github_tree_status": "User stated folder tree was committed and synced via GitHub Desktop; ChatGPT has not performed connector repo-tree verification.",
+  "files": [
+    {
+      "title": "Developer Prompt 正本路徑治理更新提案 — LOHAShare AI Console v0.1",
+      "filename": "Developer_Prompt_Path_Governance_Update_Proposal_LOHAShare_AI_Console_v0.1_20260609.md",
+      "candidate_path": "LOHAShare_AI_Platform/01_Architecture_Governance/01_Document_Governance/Current/",
+      "type": "governance_proposal"
+    },
+    {
+      "title": "LOHAShare AI Console v2.0 對 Lovable 的開發提示詞候選稿 v0.1",
+      "filename": "LOHAShare_AI_Console_v2.0_Lovable_Developer_Prompt_Candidate_v0.1_20260609.md",
+      "candidate_path": "LOHAShare_AI_Platform/05_Developer_Prompts/LOHAShare_AI_Console/Current/",
+      "type": "developer_prompt_candidate",
+      "path_note": "Requires governance approval to create 05_Developer_Prompts/LOHAShare_AI_Console/Current/ and 99_Archive/."
+    }
+  ],
+  "proposed_folder_update": {
+    "add": [
+      "LOHAShare_AI_Platform/05_Developer_Prompts/LOHAShare_AI_Console/Current/",
+      "LOHAShare_AI_Platform/05_Developer_Prompts/LOHAShare_AI_Console/99_Archive/"
+    ],
+    "do_not_add": [
+      "LOHAShare_AI_Platform/02_Modules/Nexus_Lead_Ops/",
+      "LOHAShare_AI_Platform/05_Developer_Prompts/Nexus_Lead_Ops/",
+      "LOHAShare_AI_Platform/02_Modules/Lead_Console/Developer_Prompts/"
+    ]
+  },
+  "commit_message_candidate": "docs: propose developer prompt path and draft Lovable prompt for AI Console v2.0",
+  "disclaimers": [
+    "Not written to GitHub by ChatGPT.",
+    "No commit by ChatGPT.",
+    "No PR created by ChatGPT.",
+    "GitHub repo tree not verified by ChatGPT connector."
+  ]
+}

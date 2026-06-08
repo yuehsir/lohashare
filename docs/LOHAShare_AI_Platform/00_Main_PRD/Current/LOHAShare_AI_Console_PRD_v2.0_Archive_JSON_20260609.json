@@ -1,0 +1,64 @@
+{
+  "archive_package": {
+    "package_name": "LOHAShare_AI_Console_PRD_v2.0_Archive_JSON_20260609",
+    "created_at": "2026-06-09 00:07 Asia/Taipei",
+    "status": "archive_materials_only_not_committed_by_chatgpt",
+    "user_statement": "User stated the folder tree was committed and synced to cloud GitHub via GitHub Desktop.",
+    "chatgpt_git_validation_status": "not_validated_via_github_connector",
+    "prohibitions": [
+      "Do not claim ChatGPT wrote files to GitHub.",
+      "Do not claim ChatGPT committed files.",
+      "Do not claim ChatGPT created a PR.",
+      "Do not create LOHAShare_AI_Platform/02_Modules/Nexus_Lead_Ops/."
+    ],
+    "source_context": [
+      "User-provided LOHAShare_AI_Platform_folder_tree.txt",
+      "User-provided governance sync prompt",
+      "User-provided Lovable admin screenshot",
+      "Current conversation decisions"
+    ],
+    "commit_message_suggestion": "docs: add LOHAShare AI Console PRD v2 draft and governance preflight materials",
+    "files": [
+      {
+        "filename": "LOHAShare_AI_Platform_Governance_Sync_Preflight_LOHAShare_AI_Console_v0.2_20260609.md",
+        "candidate_path": "LOHAShare_AI_Platform/01_Architecture_Governance/01_Document_Governance/Current/LOHAShare_AI_Platform_Governance_Sync_Preflight_LOHAShare_AI_Console_v0.2_20260609.md",
+        "document_type": "governance_sync_preflight",
+        "version": "v0.2",
+        "status": "Draft / Not committed by ChatGPT",
+        "notes": "Archive material generated in chat; requires GitHub connector validation or manual placement before claiming repository write."
+      },
+      {
+        "filename": "LOHAShare_AI_Console_Platform_PRD_v2.0_Draft_20260609.md",
+        "candidate_path": "LOHAShare_AI_Platform/00_Main_PRD/Current/LOHAShare_AI_Console_Platform_PRD_v2.0_Draft_20260609.md",
+        "document_type": "main_prd",
+        "version": "v2.0 Draft",
+        "status": "Draft / Not committed by ChatGPT",
+        "notes": "Archive material generated in chat; requires GitHub connector validation or manual placement before claiming repository write."
+      },
+      {
+        "filename": "LOHAShare_AI_Console_UIUX_Sitemap_v0.1_20260609.md",
+        "candidate_path": "LOHAShare_AI_Platform/00_Main_PRD/Current/LOHAShare_AI_Console_UIUX_Sitemap_v0.1_20260609.md",
+        "document_type": "uiux_sitemap",
+        "version": "v0.1",
+        "status": "Draft / Not committed by ChatGPT",
+        "notes": "Archive material generated in chat; requires GitHub connector validation or manual placement before claiming repository write."
+      },
+      {
+        "filename": "Lead_Console_MVP_Current_UI_Baseline_v0.1_20260609.md",
+        "candidate_path": "LOHAShare_AI_Platform/02_Modules/Lead_Console/Lead_Console_MVP_Current_UI_Baseline_v0.1_20260609.md",
+        "document_type": "module_ui_baseline",
+        "version": "v0.1",
+        "status": "Draft / Not committed by ChatGPT",
+        "notes": "Archive material generated in chat; requires GitHub connector validation or manual placement before claiming repository write."
+      },
+      {
+        "filename": "LOHAShare_AI_Console_PRD_v2.0_Archive_JSON_20260609.json",
+        "candidate_path": "LOHAShare_AI_Platform/00_Main_PRD/Current/LOHAShare_AI_Console_PRD_v2.0_Archive_JSON_20260609.json",
+        "document_type": "github_archive_json",
+        "version": "v0.1",
+        "status": "Archive JSON material / Not committed by ChatGPT",
+        "notes": "Can be used by future archive automation; not an execution record."
+      }
+    ]
+  }
+}
