@@ -1,0 +1,424 @@
+列出磁碟區 Windows 的資料夾 PATH
+磁碟區序號為 00000214 F82A:8308
+C:\USERS\YUEHS\DROPBOX\樂活整合行銷管理顧問公司\招募-透過招商計畫\2026-S2B2C賦能AI系統平台\LOHASHARE_AI_PLATFORM
+│  01_Architecture_Governance.7z
+│  LOHAShare_AI_Platform_file_tree.txt
+│  LOHAShare_AI_Platform_folder_tree.txt
+│  README.md
+│  
+├─00_Index
+│  │  lohashare_ai_命名層級架構圖.png
+│  │  README.md
+│  │  
+│  ├─99_Archive
+│  │      00_Index_File_Move_Map_v0.1_20260601.md
+│  │      LOHAShare_AI_Platform_Current_Folder_Structure_v1.0_20260530.docx
+│  │      LOHAShare_AI_Platform_Current_Folder_Structure_v1.1_20260530.docx
+│  │      LOHAShare_AI_Platform_Current_Folder_Structure_v1.2_20260530.docx
+│  │      LOHAShare_AI_Platform_Current_Folder_Structure_v1.3_20260530.docx
+│  │      LOHAShare_AI_Platform_Document_System_Index_v1.1_20260530.docx
+│  │      LOHAShare_AI_Platform_Document_System_Index_v1.2_20260530.docx
+│  │      LOHAShare_AI_Platform_Document_System_Index_v1.3_20260530.docx
+│  │      LOHAShare_AI_Platform_Document_System_Index_v1.4_20260530.docx
+│  │      LOHAShare_AI_Platform_Document_System_Index_v1.5_20260530.docx
+│  │      LOHAShare_AI_Platform_Document_System_Index_v1.6_20260530.docx
+│  │      LOHAShare_AI_Platform_Document_System_Index_v1.7_20260530.docx
+│  │      LOHAShare_AI_Platform_Document_System_Index_v1.8_20260530.docx
+│  │      LOHAShare_AI_Platform_New_Conversation_Handoff_v1.0_20260530.docx
+│  │      LOHAShare_AI_Platform_New_Conversation_Handoff_v1.1_20260530.docx
+│  │      LOHAShare_AI_Platform_New_Conversation_Handoff_v1.2_20260530.docx
+│  │      LOHAShare_AI_Platform_New_Conversation_Handoff_v1.3_20260530.docx
+│  │      LOHAShare_AI_Platform_New_Conversation_Handoff_v1.4_20260530.docx
+│  │      README.txt
+│  │      
+│  └─Current
+│          LOHAShare_AI_Platform_Current_Folder_Structure_v1.5_20260601.docx
+│          LOHAShare_AI_Platform_Current_Folder_Structure_v1.5_20260601.md
+│          LOHAShare_AI_Platform_Document_System_Index_v2.0_20260601.docx
+│          LOHAShare_AI_Platform_Document_System_Index_v2.0_20260601.md
+│          LOHAShare_AI_Platform_New_Conversation_Handoff_v1.6_20260601.docx
+│          LOHAShare_AI_Platform_New_Conversation_Handoff_v1.6_20260601.md
+│          README.txt
+│          
+├─00_Main_PRD
+│  │  README.md
+│  │  
+│  ├─99_Archive
+│  │      LOHAShare AI 商務網站營運控制台 PRD v1.1.docx
+│  │      LOHAShare AI 商務網站營運控制台 PRD v1.2 — 需求釐清後版本.docx
+│  │      LOHAShare AI 商務網站營運控制台 PRD v1.3.docx
+│  │      LOHAShare_AI_Business_Website_Operation_Console_PRD_v1.3_full_v1.2_retained_20260530.docx
+│  │      LOHAShare_AI_Business_Website_Operation_Console_PRD_v1.4_Modular_Governance_Update_20260530.docx
+│  │      README.txt
+│  │      
+│  ├─Current
+│  │      LOHAShare_AI_Business_Website_Operation_Console_PRD_v1.5_Naming_Hierarchy_Update_20260530.docx
+│  │      LOHAShare_AI_Business_Website_Operation_Console_PRD_v1.5_Naming_Hierarchy_Update_20260530.md
+│  │      LOHAShare_AI_Console_Platform_PRD_v2.0_Draft_20260609.md
+│  │      LOHAShare_AI_Console_PRD_v2.0_Archive_JSON_20260609.json
+│  │      LOHAShare_AI_Console_UIUX_Sitemap_v0.1_20260609.md
+│  │      README.txt
+│  │      
+│  └─v2_Clean_Version_Workspace
+│          README.txt
+│          
+├─01_Architecture_Governance
+│  │  Architecture_Governance_Tree_20260531.TXT
+│  │  README.md
+│  │  
+│  ├─00_Current_Index
+│  │  │  Architecture_Governance_File_Move_Map_v0.1_20260601.csv
+│  │  │  Architecture_Governance_File_Move_Map_v0.1_20260601.md
+│  │  │  README.txt
+│  │  │  README_Current_Governance_Index.md
+│  │  │  
+│  │  ├─99_Archive
+│  │  │      README.txt
+│  │  │      
+│  │  └─Current
+│  │          README.txt
+│  │          
+│  ├─01_Document_Governance
+│  │  │  README.md
+│  │  │  
+│  │  ├─99_Archive
+│  │  │      LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.0_20260530.docx
+│  │  │      LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.1_20260530.docx
+│  │  │      LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.2_20260530.docx
+│  │  │      LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.3_20260530.docx
+│  │  │      LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.4_20260530.docx
+│  │  │      LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.5_20260530.docx
+│  │  │      LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.6_20260530.docx
+│  │  │      LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.7_20260530.docx
+│  │  │      LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v1.8_20260530.docx
+│  │  │      LOHAShare_AI_Platform_Folder_and_File_Management_Rules_v1.0_20260530.docx
+│  │  │      LOHAShare_AI_Platform_Folder_and_File_Management_Rules_v1.1_20260530.docx
+│  │  │      LOHAShare_AI_Platform_Folder_and_File_Management_Rules_v1.2_20260530.docx
+│  │  │      README.txt
+│  │  │      
+│  │  └─Current
+│  │          LOHAShare_AI_Platform_Document_Format_Strategy_v0.1_20260601.docx
+│  │          LOHAShare_AI_Platform_Document_Format_Strategy_v0.1_20260601.md
+│  │          LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v2.0_20260601.docx
+│  │          LOHAShare_AI_Platform_Document_Governance_and_Automation_Spec_v2.0_20260601.md
+│  │          LOHAShare_AI_Platform_Document_Governance_Rules_v0.2_20260530.md
+│  │          LOHAShare_AI_Platform_Folder_and_File_Management_Rules_v1.4_20260601.docx
+│  │          LOHAShare_AI_Platform_Folder_and_File_Management_Rules_v1.4_20260601.md
+│  │          LOHAShare_AI_Platform_Governance_Sync_Preflight_LOHAShare_AI_Console_v0.2_20260609.md
+│  │          LOHAShare_Email_Fallback_Provider_Test_Console_GitHub_Archive_Candidates_v0.1_20260605.json
+│  │          LOHAShare_Email_Fallback_Provider_Test_Console_Governance_Sync_Archive_Candidates_v0.1_20260605.md
+│  │          README.txt
+│  │          
+│  ├─02_Modular_Architecture
+│  │  │  README.md
+│  │  │  
+│  │  ├─99_Archive
+│  │  │      LOHAShare_AI_Platform_Modular_Architecture_Governance_v1.0_20260530.docx
+│  │  │      LOHAShare_AI_Platform_Modular_Architecture_Governance_v1.1_Operational_Resilience_Update_20260530.docx
+│  │  │      README.txt
+│  │  │      
+│  │  └─Current
+│  │          LOHAShare_AI_Platform_Modular_Architecture_Governance_v1.2_Naming_Hierarchy_Update_20260530.docx
+│  │          LOHAShare_AI_Platform_Modular_Architecture_Governance_v1.2_Naming_Hierarchy_Update_20260530.md
+│  │          README.txt
+│  │          
+│  ├─03_Automation_DocOps
+│  │  │  README.md
+│  │  │  
+│  │  ├─99_Archive
+│  │  │      LOHAShare_AI_Platform_Automation_Strategy_and_DocOps_Roadmap_v1.0_20260530.docx
+│  │  │      LOHAShare_AI_Platform_Automation_Strategy_and_DocOps_Roadmap_v1.1_20260530.docx
+│  │  │      LOHAShare_AI_Platform_Automation_Strategy_and_DocOps_Roadmap_v1.2_20260530.docx
+│  │  │      README.txt
+│  │  │      
+│  │  └─Current
+│  │          Cross_Tool_DocOps_Automation_Roadmap_v0.1_20260605.csv
+│  │          DocOps_Automation_MVP_First_Workflow_Backlog_v0.1_20260604.csv
+│  │          LOHAShare_AI_Platform_Automation_Strategy_and_DocOps_Roadmap_v1.3_20260530.docx
+│  │          LOHAShare_AI_Platform_Automation_Strategy_and_DocOps_Roadmap_v1.3_20260530.md
+│  │          LOHAShare_AI_Platform_Cross_Tool_Resource_and_DocOps_Automation_Collaboration_Rules_v0.1_20260605.docx
+│  │          LOHAShare_AI_Platform_Cross_Tool_Resource_and_DocOps_Automation_Collaboration_Rules_v0.1_20260605.md
+│  │          LOHAShare_AI_Platform_DocOps_Automation_MVP_First_Workflow_Design_v0.1_20260604.docx
+│  │          LOHAShare_AI_Platform_DocOps_Automation_MVP_First_Workflow_Design_v0.1_20260604.md
+│  │          LOHAShare_AI_Platform_DocOps_Automation_MVP_Next_Step_Execution_Plan_v0.1_20260605.docx
+│  │          LOHAShare_AI_Platform_DocOps_Automation_MVP_Next_Step_Execution_Plan_v0.1_20260605.md
+│  │          Prompt_DocOps_Automation_MVP_First_Workflow_Execution_v0.1_20260605.md
+│  │          README.txt
+│  │          README_Placement_Guide.md
+│  │          
+│  ├─04_Content_Quality_and_Consolidation
+│  │  │  README.md
+│  │  │  
+│  │  ├─99_Archive
+│  │  │      README.txt
+│  │  │      
+│  │  └─Current
+│  │      │  LOHAShare_AI_Platform_Document_Consolidation_Plan_v0.1_20260530.docx
+│  │      │  LOHAShare_AI_Platform_Document_Consolidation_Plan_v0.1_20260530.md
+│  │      │  LOHAShare_AI_Platform_Document_Content_Quality_Rules_v0.1_20260530.docx
+│  │      │  LOHAShare_AI_Platform_Document_Content_Quality_Rules_v0.1_20260530.md
+│  │      │  LOHAShare_AI_Platform_Folder_Tree_and_Document_Format_Audit_Report_v0.1_20260604.docx
+│  │      │  LOHAShare_AI_Platform_Folder_Tree_and_Document_Format_Audit_Report_v0.1_20260604.md
+│  │      │  LOHAShare_AI_Platform_README_Backfill_Plan_v0.1_20260604.docx
+│  │      │  LOHAShare_AI_Platform_README_Backfill_Plan_v0.1_20260604.md
+│  │      │  LOHAShare_AI_Platform_Root_Folder_Reorganization_Assessment_v0.1_20260601.docx
+│  │      │  LOHAShare_AI_Platform_Root_Folder_Reorganization_Assessment_v0.1_20260601.md
+│  │      │  README.txt
+│  │      │  README_Backfill_Blank_README_Plan_v0.1_20260604.csv
+│  │      │  README_Backfill_Missing_Folders_Plan_v0.1_20260604.csv
+│  │      │  README_README_Backfill_Plan_Placement_Guide.md
+│  │      │  
+│  │      └─assets
+│  │          └─P0_DOCX_to_MD_Backfill_20260604
+│  ├─05_Support_KB_Governance
+│  │  │  README.md
+│  │  │  
+│  │  ├─99_Archive
+│  │  │      README.txt
+│  │  │      
+│  │  └─Current
+│  │          LOHAShare_AI_Platform_Support_Knowledge_Base_Management_Spec_v1.0_20260530.docx
+│  │          LOHAShare_AI_Platform_Support_Knowledge_Base_Management_Spec_v1.0_20260530.md
+│  │          README.txt
+│  │          
+│  ├─06_Tooling_and_Escalation
+│  │  │  README.md
+│  │  │  
+│  │  ├─99_Archive
+│  │  │      README.txt
+│  │  │      
+│  │  └─Current
+│  │          LOHAShare_Engineering_Escalation_and_Tooling_Decision_Guide_v0.1_20260530.docx
+│  │          LOHAShare_Engineering_Escalation_and_Tooling_Decision_Guide_v0.1_20260530.md
+│  │          README.txt
+│  │          
+│  ├─07_Visuals
+│  │  │  README.md
+│  │  │  
+│  │  ├─99_Archive
+│  │  │      README.txt
+│  │  │      
+│  │  └─Current
+│  │          lohashare_ai_命名層級架構圖.png
+│  │          README.txt
+│  │          
+│  └─assets
+│      │  README.md
+│      │  
+│      └─P1_DOCX_to_MD_Backfill_20260604
+│          │  README.md
+│          │  
+│          └─p1_modular_architecture
+│              │  README.md
+│              │  
+│              └─media
+│                      image1.png
+│                      README.md
+│                      
+├─02_Modules
+│  │  README.md
+│  │  
+│  ├─Email_Notification
+│  │  │  README.md
+│  │  │  
+│  │  └─Fallback_POC
+│  │      │  README.md
+│  │      │  
+│  │      ├─00_Module_Index
+│  │      │      README.txt
+│  │      │      
+│  │      ├─01_POC_Test_Logs
+│  │      │  │  README.md
+│  │      │  │  
+│  │      │  └─2026-05-30_Resend_Test
+│  │      │          LOHAShare Email Fallback Provider Test Console v0.1 — Resend POC 初測成功.csv
+│  │      │          LOHAShare_Email_Provider_Test_Log_Resend_20260530.csv
+│  │      │          README.md
+│  │      │          
+│  │      ├─02_Screenshots
+│  │      │  │  README.md
+│  │      │  │  
+│  │      │  └─2026-05-30_Resend_Test
+│  │      │          README.md
+│  │      │          Resend_Accepted_Gmail_Inbox_Confirmed_20260530_v0.1.jpg
+│  │      │          Resend_Configured_20260530_v0.1.jpg
+│  │      │          
+│  │      ├─03_Decision_Records
+│  │      │      Email_Fallback_POC_Decision_Record_20260530_v0.1.md
+│  │      │      README.md
+│  │      │      
+│  │      ├─04_Provider_Notes
+│  │      │      README.txt
+│  │      │      
+│  │      └─05_Module_Specs
+│  │              LOHAShare_Email_Fallback_Provider_POC_Spec_v0.1_20260530.docx
+│  │              LOHAShare_Email_Fallback_Provider_POC_Spec_v0.2_20260530.docx
+│  │              LOHAShare_Email_Fallback_Provider_POC_Spec_v0.3_20260530.docx
+│  │              README.md
+│  │              
+│  ├─Lead_Console
+│  │      internal_operations_manual_v1_0_0_p3c_stable_20260529.docx
+│  │      internal_operations_manual_v1_0_0_p3c_stable_20260529.md
+│  │      Lead_Console_MVP_Current_UI_Baseline_v0.1_20260609.md
+│  │      LOHAShare AI Lead & AEO Console 模組 v1 — Lovable 開發提示詞 v1.docx
+│  │      LOHAShare-LNC-Phase3c-Stable-Document-Index-v1.0.0-20260529.md
+│  │      MVP-功能盤點與操作流程.md
+│  │      mvp_acceptance_report_v1_0_0_p3c_stable_20260529.docx
+│  │      mvp_acceptance_report_v1_0_0_p3c_stable_20260529.md
+│  │      next_phase_roadmap_v1_0_0_p3c_stable_20260529.docx
+│  │      next_phase_roadmap_v1_0_0_p3c_stable_20260529.md
+│  │      Nexus_Lead_Ops_MVP_Functions_and_Data_Fields_v1.1_20260530.docx
+│  │      Nexus_Lead_Ops_MVP_Functions_and_Data_Fields_v1.2_20260530.docx
+│  │      Q1.docx
+│  │      Q2.docx
+│  │      README.md
+│  │      
+│  └─Referral
+│          Nexus_Lead_Ops_Referral_MVP_Product_Spec_v1.0_20260530.docx
+│          Nexus_Lead_Ops_Referral_MVP_Product_Spec_v1.1_20260530.docx
+│          README.md
+│          
+├─03_SOP_and_QA
+│  │  README.md
+│  │  
+│  └─Email_Emergency_Playbook
+│          LOHAShare_Email_Weekend_Emergency_Playbook_v0.1_20260530.docx
+│          README.md
+│          
+├─04_Support_Knowledge_Base
+│  │  README.md
+│  │  
+│  ├─Email_Delivery_Support_Log
+│  │      Email_Delivery_Incident_and_Troubleshooting_Log_v0.1_20260530.docx
+│  │      Email_Delivery_Incident_and_Troubleshooting_Log_v0.2_20260530.docx
+│  │      README.md
+│  │      
+│  ├─Known_Issues_FAQ
+│  │      Email_Delivery_Known_Issues_FAQ_v1.0_20260530.docx
+│  │      Email_Delivery_Known_Issues_FAQ_v1.1_20260530.docx
+│  │      README.md
+│  │      
+│  ├─Lovable_Support_Tickets
+│  │      2026-05-29 15 46 18.jpg
+│  │      2026-05-29 16 18 47.jpg
+│  │      2026-05-29 18 26 13.jpg
+│  │      4 Message ID.jpg
+│  │      Lovable_Mailgun_Email_Delivery_Support_Ticket_Log_v0.1_20260530.docx
+│  │      Lovable_Mailgun_Email_Delivery_Support_Ticket_Log_v0.2_20260530.docx
+│  │      Mailgun acccepted but never arrives - common issue.jpg
+│  │      README.md
+│  │      螢幕擷取畫面 2026-05-29 060109.jpg
+│  │      螢幕擷取畫面 2026-05-29 064214.jpg
+│  │      
+│  ├─Provider_Debug_History
+│  │      LOHAShare_Email_Notification_Module_Risk_Register_v0.1_20260530.docx
+│  │      README.md
+│  │      
+│  └─Resolved_Cases
+│          README.txt
+│          
+├─05_Developer_Prompts
+│  │  MOVE_05_Developer_Prompts_Files_v0.1_20260601.ps1
+│  │  README.md
+│  │  README_05_Developer_Prompts_Reorg_Tool_v0.1_20260601.md
+│  │  RUN_MOVE_05_Developer_Prompts_Files_v0.1_20260601.bat
+│  │  
+│  ├─DocOps_MVP
+│  │  │  README.md
+│  │  │  
+│  │  ├─99_Archive
+│  │  │      README.txt
+│  │  │      
+│  │  ├─assets
+│  │  │  │  README.md
+│  │  │  │  
+│  │  │  └─P2_DOCX_to_MD_Backfill_20260604
+│  │  │      │  README.md
+│  │  │      │  
+│  │  │      └─p2_docops_mvp_prompt
+│  │  │              README.md
+│  │  │              
+│  │  └─Current
+│  │          LOHAShare_DocOps_MVP_n8n_Workflow_Build_Prompt_v0.1_20260530.docx
+│  │          LOHAShare_DocOps_MVP_n8n_Workflow_Build_Prompt_v0.1_20260530.md
+│  │          README.txt
+│  │          
+│  ├─Email_Notification
+│  │  │  README.md
+│  │  │  
+│  │  └─Fallback_POC
+│  │      │  README.md
+│  │      │  
+│  │      ├─99_Archive
+│  │      │      README.txt
+│  │      │      
+│  │      └─Current
+│  │              README.txt
+│  │              Replit_Email_Fallback_Provider_Test_Console_Prompt_v0.1_20260530.md
+│  │              
+│  └─LOHAShare_AI_Console
+│      │  README.txt
+│      │  
+│      ├─99_Archive
+│      │      README.txt
+│      │      
+│      └─Current
+│              Developer_Prompt_Path_Governance_Update_Proposal_LOHAShare_AI_Console_v0.1_20260609.md
+│              LOHAShare_AI_Console_v2.0_Lovable_Developer_Prompt_Archive_JSON_20260609.json
+│              LOHAShare_AI_Console_v2.0_Lovable_Developer_Prompt_Candidate_v0.1_20260609.md
+│              README.txt
+│              
+├─06_Release_Notes
+│      LOHAShare_AI_Platform_Docs_as_Code_Phase1_Release_Note_v0.1_20260530.docx
+│      LOHAShare_AI_Platform_README_and_P0_MD_Backfill_Completion_Record_v0.1_20260604.docx
+│      LOHAShare_AI_Platform_README_and_P0_MD_Backfill_Completion_Record_v0.1_20260604.md
+│      LOHAShare_AI_Platform_Root_Folder_Reorganization_Release_Note_v0.1_20260601.docx
+│      LOHAShare_AI_Platform_Root_Folder_Reorganization_Release_Note_v0.1_20260601.md
+│      README.txt
+│      README_and_P0_MD_Backfill_Completion_Record_Data_v0.1_20260604.csv
+│      
+└─07_Archive
+    │  README.md
+    │  
+    ├─Deprecated_Folder_Structures
+    │      LOHAShare_AI_Platform_folder_tree_old.txt
+    │      README.txt
+    │      
+    └─Package_Export
+        │  LOHAShare_AI_Platform_00_Index_Reorg_Folder_Structure_v0.1_20260601.zip
+        │  LOHAShare_AI_Platform_00_Main_PRD_Reorg_Fix_v0.2_20260601.zip
+        │  LOHAShare_AI_Platform_00_Main_PRD_Reorg_With_File_Classification_v0.1_20260601.zip
+        │  LOHAShare_AI_Platform_05_Developer_Prompts_Reorg_With_File_Classification_v0.1_20260601.zip
+        │  LOHAShare_AI_Platform_Architecture_Governance_Reorg_Folder_Structure_v0.1_20260601.zip
+        │  LOHAShare_AI_Platform_Architecture_Governance_Reorg_With_File_Classification_v0.2_20260601.zip
+        │  LOHAShare_AI_Platform_Automation_Strategy_Update_Package_20260530.zip
+        │  LOHAShare_AI_Platform_Docs_Package (1).zip
+        │  LOHAShare_AI_Platform_Docs_Package (2).zip
+        │  LOHAShare_AI_Platform_Document_Governance_Folder_Rules_Update_Package_20260530.zip
+        │  LOHAShare_AI_Platform_Document_Governance_Support_KB_Latest_Package_20260530.zip
+        │  LOHAShare_AI_Platform_Folder_Reorganization_Phase1_Completion_Update_Package_20260601.zip
+        │  LOHAShare_AI_Platform_Folder_Structure_Sync_Update_Package_20260530.zip
+        │  LOHAShare_AI_Platform_folder_tree (1).zip
+        │  LOHAShare_AI_Platform_folder_tree (2).zip
+        │  LOHAShare_AI_Platform_folder_tree (3).zip
+        │  LOHAShare_AI_Platform_folder_tree (4).zip
+        │  LOHAShare_AI_Platform_GitHub_Dropbox_Sync_Strategy_Update_Package_20260530.zip
+        │  LOHAShare_AI_Platform_Naming_Hierarchy_Document_Update_Package_20260530.zip
+        │  LOHAShare_AI_Platform_Operational_Resilience_Document_Update_Package_20260530.zip
+        │  README.md
+        │  README_Phase1_Completion_Update_Placement_Guide.md
+        │  
+        ├─00_Main_PRD_Reorg_20260601
+        │      00_Main_PRD_File_Move_Map_v0.1_20260601.csv
+        │      00_Main_PRD_File_Move_Map_v0.1_20260601.md
+        │      MOVE_00_Main_PRD_Files_v0.1_20260601.bat
+        │      MOVE_00_Main_PRD_Files_v0.2_20260601.ps1
+        │      README.md
+        │      README_00_Main_PRD_Reorg_Fix_v0.2_20260601.md
+        │      RUN_MOVE_00_Main_PRD_Files_v0.2_20260601.bat
+        │      
+        └─05_Developer_Prompts_Reorg_20260601
+                05_Developer_Prompts_File_Move_Map_v0.1_20260601.csv
+                05_Developer_Prompts_File_Move_Map_v0.1_20260601.md
+                README.txt
+                
