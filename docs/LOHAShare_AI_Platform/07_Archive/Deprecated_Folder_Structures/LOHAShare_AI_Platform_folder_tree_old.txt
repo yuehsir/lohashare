@@ -1,0 +1,61 @@
+Folder PATH listing for volume Windows
+Volume serial number is 00000054 F82A:8308
+C:.
+¢u¢w¢w¢w00_Index
+¢x   ¢u¢w¢w¢w99_Archive
+¢x   ¢|¢w¢w¢wCurrent
+¢u¢w¢w¢w00_Main_PRD
+¢u¢w¢w¢w01_Architecture_Governance
+¢x   ¢u¢w¢w¢w00_Current_Index
+¢x   ¢x   ¢u¢w¢w¢w99_Archive
+¢x   ¢x   ¢|¢w¢w¢wCurrent
+¢x   ¢u¢w¢w¢w01_Document_Governance
+¢x   ¢x   ¢u¢w¢w¢w99_Archive
+¢x   ¢x   ¢|¢w¢w¢wCurrent
+¢x   ¢u¢w¢w¢w02_Modular_Architecture
+¢x   ¢x   ¢u¢w¢w¢w99_Archive
+¢x   ¢x   ¢|¢w¢w¢wCurrent
+¢x   ¢u¢w¢w¢w03_Automation_DocOps
+¢x   ¢x   ¢u¢w¢w¢w99_Archive
+¢x   ¢x   ¢|¢w¢w¢wCurrent
+¢x   ¢u¢w¢w¢w04_Content_Quality_and_Consolidation
+¢x   ¢x   ¢u¢w¢w¢w99_Archive
+¢x   ¢x   ¢|¢w¢w¢wCurrent
+¢x   ¢u¢w¢w¢w05_Support_KB_Governance
+¢x   ¢x   ¢u¢w¢w¢w99_Archive
+¢x   ¢x   ¢|¢w¢w¢wCurrent
+¢x   ¢u¢w¢w¢w06_Tooling_and_Escalation
+¢x   ¢x   ¢u¢w¢w¢w99_Archive
+¢x   ¢x   ¢|¢w¢w¢wCurrent
+¢x   ¢|¢w¢w¢w07_Visuals
+¢x       ¢u¢w¢w¢w99_Archive
+¢x       ¢|¢w¢w¢wCurrent
+¢u¢w¢w¢w02_Modules
+¢x   ¢u¢w¢w¢wEmail_Notification
+¢x   ¢x   ¢|¢w¢w¢wFallback_POC
+¢x   ¢x       ¢u¢w¢w¢w00_Module_Index
+¢x   ¢x       ¢u¢w¢w¢w01_POC_Test_Logs
+¢x   ¢x       ¢x   ¢|¢w¢w¢w2026-05-30_Resend_Test
+¢x   ¢x       ¢u¢w¢w¢w02_Screenshots
+¢x   ¢x       ¢x   ¢|¢w¢w¢w2026-05-30_Resend_Test
+¢x   ¢x       ¢u¢w¢w¢w03_Decision_Records
+¢x   ¢x       ¢u¢w¢w¢w04_Provider_Notes
+¢x   ¢x       ¢|¢w¢w¢w05_Module_Specs
+¢x   ¢u¢w¢w¢wLead_Console
+¢x   ¢|¢w¢w¢wReferral
+¢u¢w¢w¢w03_SOP_and_QA
+¢x   ¢|¢w¢w¢wEmail_Emergency_Playbook
+¢u¢w¢w¢w04_Support_Knowledge_Base
+¢x   ¢u¢w¢w¢wEmail_Delivery_Support_Log
+¢x   ¢u¢w¢w¢wKnown_Issues_FAQ
+¢x   ¢u¢w¢w¢wLovable_Support_Tickets
+¢x   ¢u¢w¢w¢wProvider_Debug_History
+¢x   ¢|¢w¢w¢wResolved_Cases
+¢u¢w¢w¢w05_Developer_Prompts
+¢x   ¢u¢w¢w¢wDocOps_MVP
+¢x   ¢|¢w¢w¢wEmail_Notification
+¢x       ¢|¢w¢w¢wFallback_POC
+¢u¢w¢w¢w06_Release_Notes
+¢|¢w¢w¢w07_Archive
+    ¢u¢w¢w¢wDeprecated_Folder_Structures
+    ¢|¢w¢w¢wPackage_Export

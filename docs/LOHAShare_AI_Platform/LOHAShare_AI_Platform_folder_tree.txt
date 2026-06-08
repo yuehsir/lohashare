@@ -1,61 +1,80 @@
-Folder PATH listing for volume Windows
-Volume serial number is 00000054 F82A:8308
+列出磁碟區 Windows 的資料夾 PATH
+磁碟區序號為 00000067 F82A:8308
 C:.
-├───00_Index
-│   ├───99_Archive
-│   └───Current
-├───00_Main_PRD
-├───01_Architecture_Governance
-│   ├───00_Current_Index
-│   │   ├───99_Archive
-│   │   └───Current
-│   ├───01_Document_Governance
-│   │   ├───99_Archive
-│   │   └───Current
-│   ├───02_Modular_Architecture
-│   │   ├───99_Archive
-│   │   └───Current
-│   ├───03_Automation_DocOps
-│   │   ├───99_Archive
-│   │   └───Current
-│   ├───04_Content_Quality_and_Consolidation
-│   │   ├───99_Archive
-│   │   └───Current
-│   ├───05_Support_KB_Governance
-│   │   ├───99_Archive
-│   │   └───Current
-│   ├───06_Tooling_and_Escalation
-│   │   ├───99_Archive
-│   │   └───Current
-│   └───07_Visuals
-│       ├───99_Archive
-│       └───Current
-├───02_Modules
-│   ├───Email_Notification
-│   │   └───Fallback_POC
-│   │       ├───00_Module_Index
-│   │       ├───01_POC_Test_Logs
-│   │       │   └───2026-05-30_Resend_Test
-│   │       ├───02_Screenshots
-│   │       │   └───2026-05-30_Resend_Test
-│   │       ├───03_Decision_Records
-│   │       ├───04_Provider_Notes
-│   │       └───05_Module_Specs
-│   ├───Lead_Console
-│   └───Referral
-├───03_SOP_and_QA
-│   └───Email_Emergency_Playbook
-├───04_Support_Knowledge_Base
-│   ├───Email_Delivery_Support_Log
-│   ├───Known_Issues_FAQ
-│   ├───Lovable_Support_Tickets
-│   ├───Provider_Debug_History
-│   └───Resolved_Cases
-├───05_Developer_Prompts
-│   ├───DocOps_MVP
-│   └───Email_Notification
-│       └───Fallback_POC
-├───06_Release_Notes
-└───07_Archive
-    ├───Deprecated_Folder_Structures
-    └───Package_Export
+└─LOHAShare_AI_Platform
+    ├─00_Index
+    │  ├─99_Archive
+    │  └─Current
+    ├─00_Main_PRD
+    │  ├─99_Archive
+    │  ├─Current
+    │  └─v2_Clean_Version_Workspace
+    ├─01_Architecture_Governance
+    │  ├─00_Current_Index
+    │  │  ├─99_Archive
+    │  │  └─Current
+    │  ├─01_Document_Governance
+    │  │  ├─99_Archive
+    │  │  └─Current
+    │  ├─02_Modular_Architecture
+    │  │  ├─99_Archive
+    │  │  └─Current
+    │  ├─03_Automation_DocOps
+    │  │  ├─99_Archive
+    │  │  └─Current
+    │  ├─04_Content_Quality_and_Consolidation
+    │  │  ├─99_Archive
+    │  │  └─Current
+    │  │      └─assets
+    │  │          └─P0_DOCX_to_MD_Backfill_20260604
+    │  ├─05_Support_KB_Governance
+    │  │  ├─99_Archive
+    │  │  └─Current
+    │  ├─06_Tooling_and_Escalation
+    │  │  ├─99_Archive
+    │  │  └─Current
+    │  ├─07_Visuals
+    │  │  ├─99_Archive
+    │  │  └─Current
+    │  └─assets
+    │      └─P1_DOCX_to_MD_Backfill_20260604
+    │          └─p1_modular_architecture
+    │              └─media
+    ├─02_Modules
+    │  ├─Email_Notification
+    │  │  └─Fallback_POC
+    │  │      ├─00_Module_Index
+    │  │      ├─01_POC_Test_Logs
+    │  │      │  └─2026-05-30_Resend_Test
+    │  │      ├─02_Screenshots
+    │  │      │  └─2026-05-30_Resend_Test
+    │  │      ├─03_Decision_Records
+    │  │      ├─04_Provider_Notes
+    │  │      └─05_Module_Specs
+    │  ├─Lead_Console
+    │  └─Referral
+    ├─03_SOP_and_QA
+    │  └─Email_Emergency_Playbook
+    ├─04_Support_Knowledge_Base
+    │  ├─Email_Delivery_Support_Log
+    │  ├─Known_Issues_FAQ
+    │  ├─Lovable_Support_Tickets
+    │  ├─Provider_Debug_History
+    │  └─Resolved_Cases
+    ├─05_Developer_Prompts
+    │  ├─DocOps_MVP
+    │  │  ├─99_Archive
+    │  │  ├─assets
+    │  │  │  └─P2_DOCX_to_MD_Backfill_20260604
+    │  │  │      └─p2_docops_mvp_prompt
+    │  │  └─Current
+    │  └─Email_Notification
+    │      └─Fallback_POC
+    │          ├─99_Archive
+    │          └─Current
+    ├─06_Release_Notes
+    └─07_Archive
+        ├─Deprecated_Folder_Structures
+        └─Package_Export
+            ├─00_Main_PRD_Reorg_20260601
+            └─05_Developer_Prompts_Reorg_20260601
