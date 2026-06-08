@@ -1,0 +1,47 @@
+{
+  "archive_package": {
+    "title": "LOHAShare AI Platform New Conversation Handoff v1.7 — Preflight Action Guide",
+    "version": "v1.7",
+    "date": "2026-06-09",
+    "timezone": "Asia/Taipei",
+    "status": "Draft / Handoff Upgrade / Preflight Action Guide / Not Committed by ChatGPT",
+    "generated_by": "ChatGPT",
+    "github_write_status": "not_written",
+    "commit_status": "not_committed",
+    "pr_status": "not_created",
+    "candidate_path": "docs/LOHAShare_AI_Platform/00_Index/Current/",
+    "primary_file": "LOHAShare_AI_Platform_New_Conversation_Handoff_v1.7_Preflight_Action_Guide_20260609.md",
+    "baseline_file": "docs/LOHAShare_AI_Platform/00_Index/Current/LOHAShare_AI_Platform_New_Conversation_Handoff_v1.6_20260601.md",
+    "do_not_create": [
+      "LOHAShare_AI_Platform_New_Conversation_Bootstrap_Guide_v1.0_20260609.md",
+      "LOHAShare AI Platform 新對話規範同步啟動指南 v1.0"
+    ],
+    "source_files_read_by_github_connector": [
+      "docs/LOHAShare_AI_Platform/00_Index/Current/LOHAShare_AI_Platform_New_Conversation_Handoff_v1.6_20260601.md",
+      "docs/LOHAShare_AI_Platform/00_Index/Current/LOHAShare_AI_Platform_Document_System_Index_v2.0_20260601.md",
+      "docs/LOHAShare_AI_Platform/00_Index/Current/LOHAShare_AI_Platform_Current_Folder_Structure_v1.5_20260601.md",
+      "docs/LOHAShare_AI_Platform/01_Architecture_Governance/01_Document_Governance/Current/LOHAShare_AI_Platform_Document_Governance_Rules_v0.2_20260530.md",
+      "docs/LOHAShare_AI_Platform/01_Architecture_Governance/01_Document_Governance/Current/LOHAShare_AI_Platform_Folder_and_File_Management_Rules_v1.4_20260601.md",
+      "docs/LOHAShare_AI_Platform/01_Architecture_Governance/01_Document_Governance/Current/LOHAShare_AI_Platform_Document_Format_Strategy_v0.1_20260601.md",
+      "docs/LOHAShare_AI_Platform/01_Architecture_Governance/02_Modular_Architecture/Current/LOHAShare_AI_Platform_Modular_Architecture_Governance_v1.2_Naming_Hierarchy_Update_20260530.md",
+      "docs/LOHAShare_AI_Platform/01_Architecture_Governance/03_Automation_DocOps/Current/LOHAShare_AI_Platform_Automation_Strategy_and_DocOps_Roadmap_v1.3_20260530.md",
+      "docs/LOHAShare_AI_Platform/01_Architecture_Governance/04_Content_Quality_and_Consolidation/Current/LOHAShare_AI_Platform_Document_Consolidation_Plan_v0.1_20260530.md",
+      "docs/LOHAShare_AI_Platform/01_Architecture_Governance/04_Content_Quality_and_Consolidation/Current/LOHAShare_AI_Platform_Document_Content_Quality_Rules_v0.1_20260530.md"
+    ],
+    "supersedes": [
+      {
+        "file": "LOHAShare_AI_Platform_New_Conversation_Handoff_v1.6_20260601.md",
+        "status": "superseded_after_review_if_v1.7_is_accepted",
+        "recommended_archive_path": "docs/LOHAShare_AI_Platform/00_Index/99_Archive/"
+      }
+    ],
+    "recommended_commit_message": "docs: upgrade new conversation handoff with preflight action guide",
+    "governance_notes": [
+      "Update existing New Conversation Handoff instead of creating a parallel Bootstrap Guide.",
+      "Preflight Only Mode must not generate files.",
+      "File Generation Mode requires explicit user authorization.",
+      "GitHub / Lovable / Supabase actions must not be claimed unless actually performed.",
+      "If an existing document can be updated, do not create a new parallel document."
+    ]
+  }
+}
