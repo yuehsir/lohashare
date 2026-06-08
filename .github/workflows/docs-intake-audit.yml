@@ -1,0 +1,40 @@
+name: LOHAShare AI Platform New Document Intake Audit Workflow v0.1
+
+on:
+  workflow_dispatch:
+
+  push:
+    paths:
+      - "docs/LOHAShare_AI_Platform/**"
+      - ".github/workflows/docs-intake-audit.yml"
+      - "scripts/docops/intake_audit.py"
+
+permissions:
+  contents: read
+
+jobs:
+  docs-intake-audit:
+    name: Run DocOps Intake Audit
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run intake audit
+        run: |
+          python scripts/docops/intake_audit.py
+
+      - name: Upload audit artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LOHAShare_AI_Platform_docops_intake_audit
+          path: |
+            docops_audit_output/new_document_intake_audit.csv
+            docops_audit_output/new_document_intake_audit_report.md
+          if-no-files-found: error
