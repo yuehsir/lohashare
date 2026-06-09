@@ -795,3 +795,16 @@ Phase 1.2 MVP 完成後，必須符合：
 ```
 
 除非使用者再次明確批准 Build，否則請停在 acknowledgement。
+
+---
+
+## 14. Implementation Notes / Errata
+
+### IN-001: CSV Export — Source/UTM Column Placement
+
+- 12 個 source / UTM 欄位一律 append 到既有 CSV headers 尾端，不插入中間。
+- 目的：避免既有 BI / Excel / Google Sheet 欄位索引位移。
+- 欄位順序固定為：
+  `source_type`, `source_platform`, `source_channel`, `source_content_url`, `source_campaign_id`, `source_campaign_name`, `source_landing_url`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`。
+- 若未來新增更多 source 欄位，一律繼續 append 到尾端。
+- 此 note 僅影響 CSV header 位置，不影響 DB schema、submit route、LeadDetailDrawer、trigger blocklist 或其他 Phase 1.2 決策。
