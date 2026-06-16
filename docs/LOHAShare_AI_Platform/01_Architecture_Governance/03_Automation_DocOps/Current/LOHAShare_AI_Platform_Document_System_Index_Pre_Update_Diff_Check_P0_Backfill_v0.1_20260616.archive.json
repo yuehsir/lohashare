@@ -1,0 +1,74 @@
+{
+  "schema": "LOHAShare_AI_Platform_GitHub_Archive_JSON_v0.1",
+  "generated_at_taiwan_time": "2026-06-16 18:40:00 +0800",
+  "document": {
+    "title": "LOHAShare AI Platform Document System Index 本體更新前差異檢查草案 — P0 Backfill",
+    "version": "v0.1",
+    "status": "Draft / Pre-Update Diff Check / No Commit Yet",
+    "document_type": "Document System Index Pre-Update Diff Check / P0 Backfill Governance Review",
+    "filename": "LOHAShare_AI_Platform_Document_System_Index_Pre_Update_Diff_Check_P0_Backfill_v0.1_20260616.md",
+    "archive_json_filename": "LOHAShare_AI_Platform_Document_System_Index_Pre_Update_Diff_Check_P0_Backfill_v0.1_20260616.archive.json",
+    "date": "2026-06-16",
+    "language": "zh-Hant"
+  },
+  "github": {
+    "repository": "yuehsir/lohashare",
+    "recommended_path": "docs/LOHAShare_AI_Platform/01_Architecture_Governance/03_Automation_DocOps/Current/",
+    "written_to_github": false,
+    "committed": false,
+    "pull_request_created": false,
+    "recommended_commit_message": "docs(docops): add P0 backfill index pre-update diff check"
+  },
+  "pre_update_diff_check": {
+    "document_system_index_body_path_confirmed": false,
+    "requires_fetch_existing_index_body_before_update": true,
+    "insert_block_sources": [
+      "LOHAShare_AI_Platform_Document_System_Index_Body_Update_Draft_P0_Backfill_v0.1_20260616.md",
+      "LOHAShare_AI_Platform_Document_System_Index_Body_Update_Draft_P0_Backfill_v0.1_20260616.archive.json"
+    ],
+    "recommended_parent_section": "01_Architecture_Governance",
+    "recommended_subsection": "01_Architecture_Governance / 03_Automation_DocOps / Current",
+    "recommended_section_title": "03_Automation_DocOps / Current — DocOps Backfill, Commit Readiness, Completion, and Index Update Governance"
+  },
+  "possible_conflicts": [
+    "Existing Index may already include a Document System Index / DocOps section.",
+    "Existing Index may still use v1.6, v1.8, v2.0, or other version naming.",
+    "README may already be listed in a folder guide section.",
+    "Archive JSON may already be represented under metadata or archive sections.",
+    "Governance documents may be mistaken for Lovable Build progress.",
+    "Email Notification / Provider Router Phase 2.4 may be mistaken as overall LOHAShare AI Console Phase 2.4."
+  ],
+  "do_not_update_directly": [
+    "Document System Index body",
+    "Main PRD",
+    "Lovable Build Prompt",
+    "Lovable Build Resume Prompt",
+    "PR / pull request",
+    "workflow",
+    "production release note",
+    "README",
+    "Any governance master document without fetch and SHA confirmation"
+  ],
+  "recommended_update_flow": [
+    "Search for Document System Index body candidate files.",
+    "Confirm the single formal Index body path.",
+    "Fetch existing Index body content and SHA.",
+    "Check for existing DocOps / P0 Backfill / Archive JSON sections.",
+    "Compare against Index Body Update Draft insertion block.",
+    "Generate pre-update diff check files and Archive JSON.",
+    "Ask user to confirm diff check.",
+    "Generate Document System Index body updated draft.",
+    "Update Index body only after explicit user approval.",
+    "Perform post-commit verification.",
+    "Do not create PR unless separately approved."
+  ],
+  "safety": {
+    "do_not_commit_this_draft_yet": true,
+    "do_not_write_github": true,
+    "do_not_create_pr": true,
+    "do_not_update_document_system_index_body": true,
+    "do_not_update_main_prd": true,
+    "do_not_return_to_lovable_build": true
+  },
+  "next_recommended_action": "Decide whether to commit this pre-update diff check draft, but do not update the Document System Index body yet."
+}
