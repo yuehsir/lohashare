@@ -1,0 +1,99 @@
+{
+  "schema": "LOHAShare_AI_Platform_GitHub_Archive_JSON_v0.1",
+  "generated_at_taiwan_time": "2026-06-16 14:22:31 +0800",
+  "document": {
+    "title": "LOHAShare AI Platform Lovable Backfill Intake Report",
+    "version": "v0.1",
+    "status": "Draft / Intake Only / No Commit Yet",
+    "document_type": "DocOps Backfill Intake Report / Lovable Archive Gap Review",
+    "filename": "LOHAShare_AI_Platform_Lovable_Backfill_Intake_Report_v0.1_20260615.md",
+    "archive_json_filename": "LOHAShare_AI_Platform_Lovable_Backfill_Intake_Report_v0.1_20260615.archive.json",
+    "date": "2026-06-15",
+    "language": "zh-Hant"
+  },
+  "source_boundary": {
+    "source": "User-pasted response from Lovable 做網站後台 conversation: archive status inventory",
+    "restrictions": [
+      "Do not re-infer Lovable conversation details",
+      "Do not invent missing commit SHAs",
+      "Do not determine PRD v2.0 commit status",
+      "Do not treat this as a committed or archived file"
+    ]
+  },
+  "github": {
+    "repository": "yuehsir/lohashare",
+    "candidate_paths": [
+      "docs/LOHAShare_AI_Platform/01_Architecture_Governance/03_Automation_DocOps/Current/",
+      "docs/LOHAShare_AI_Platform/01_Architecture_Governance/04_Content_Quality_and_Consolidation/Current/"
+    ],
+    "tree_validation_status": "Pending GitHub Tree Validation",
+    "written_to_github": false,
+    "committed": false,
+    "pull_request_created": false,
+    "recommended_commit_message": "docs(docops): add Lovable backfill intake report"
+  },
+  "confirmed_archived_files_count": 5,
+  "confirmed_archived_files": [
+    {
+      "title": "Phase 2.3c-b-d-e Second Preview Real Send Smoke Test Successful Note",
+      "repo": "yuehsir/lohashare",
+      "path": "docs/LOHAShare_AI_Platform/06_Release_Notes/LOHAShare_AI_Console/LOHAShare_AI_Console_Phase_2.3c-b-d-e_Second_Preview_Real_Send_Smoke_Test_Successful_Note_20260613.md",
+      "commit_message": "docs: archive phase 2.3c-b-d-e resend smoke test success note",
+      "commit_sha": "a1c82181fb218fd18c6efe98f52ea38c571ab4ca"
+    },
+    {
+      "title": "Phase 2.4-0 Production Router Rollout Planning",
+      "repo": "yuehsir/lohashare",
+      "path": "docs/LOHAShare_AI_Platform/06_Release_Notes/LOHAShare_AI_Console/LOHAShare_AI_Console_Phase_2.4-0_Production_Router_Rollout_Planning_20260613.md",
+      "commit_message": "docs: archive phase 2.4 production router rollout planning",
+      "commit_sha": "2f520ea8fc8f7982626e8c8dcb37298e076982fc"
+    },
+    {
+      "title": "Phase 2.4-a Production Readiness Audit",
+      "repo": "yuehsir/lohashare",
+      "path": "docs/LOHAShare_AI_Platform/06_Release_Notes/LOHAShare_AI_Console/LOHAShare_AI_Console_Phase_2.4-a_Production_Readiness_Audit_20260613.md",
+      "commit_message": "docs: archive phase 2.4-a production readiness audit",
+      "commit_sha": "aaa82beb820d7e366a72045d8b7edd83f245f1f1"
+    },
+    {
+      "title": "Phase 2.4-a-1 Operator Safety / SOP Draft Planning",
+      "repo": "yuehsir/lohashare",
+      "path": "docs/LOHAShare_AI_Platform/06_Release_Notes/LOHAShare_AI_Console/LOHAShare_AI_Console_Phase_2.4-a-1_Operator_Safety_SOP_Draft_Planning_20260613.md",
+      "commit_message": "docs: archive phase 2.4-a-1 operator safety SOP planning",
+      "commit_sha": "a16c330beba33d02c1249328123788faa13f1f7e"
+    },
+    {
+      "title": "Phase 2.4 Production Router Operator SOP DRAFT",
+      "repo": "yuehsir/lohashare",
+      "path": "docs/LOHAShare_AI_Platform/06_Release_Notes/LOHAShare_AI_Console/LOHAShare_AI_Console_Phase_2.4_Production_Router_Operator_SOP_DRAFT_20260613.md",
+      "commit_message": "docs: add phase 2.4 production router operator SOP draft",
+      "commit_sha": "f54e08d7adbde4cb0fc3d7c7c2d25092fbc01bbf"
+    }
+  ],
+  "backfill_priorities": {
+    "P0": [
+      "Lovable Phase Timeline Reconciliation Report v0.1",
+      "LOHAShare_AI_Platform_Lovable_Backfill_Intake_Report_v0.1",
+      "LOHAShare_AI_Console_Phase_Control_Board_20260613.md"
+    ],
+    "P1": [
+      "LOHAShare_AI_Business_Website_Operation_Console_PRD_v1.3.1_Email_Router_Production_Rollout_Addendum.md",
+      "LOHAShare_AI_Console_Lovable_Phase_Status_Report_20260613.md",
+      "PRD v2.0 Draft 歸檔 / 狀態確認紀錄"
+    ],
+    "P2": [
+      "Phase 2.1a–2.3 Timeline Supplement",
+      "Social / LINE OA Lead Tracking v0.3 狀態補登紀錄",
+      "DocOps Automation MVP v0.1 驗收銜接紀錄",
+      "Lead Console MVP v0.2 任務盤點銜接紀錄"
+    ]
+  },
+  "safety": {
+    "do_not_commit": true,
+    "do_not_write_github": true,
+    "do_not_create_pr": true,
+    "do_not_generate_lovable_build_prompt": true,
+    "do_not_return_to_lovable_build": true
+  },
+  "next_action": "Generate P0 Phase Timeline Reconciliation Report before any commit."
+}
