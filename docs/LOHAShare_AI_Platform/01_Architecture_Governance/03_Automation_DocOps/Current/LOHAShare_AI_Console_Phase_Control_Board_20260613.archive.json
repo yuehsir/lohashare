@@ -1,0 +1,94 @@
+{
+  "schema": "LOHAShare_AI_Platform_GitHub_Archive_JSON_v0.1",
+  "generated_at_taiwan_time": "2026-06-16 17:19:19 +0800",
+  "document": {
+    "title": "LOHAShare AI Console Phase Control Board 20260613",
+    "version": "v0.1 / 20260613 Board",
+    "status": "Draft / Control Board / No Commit Yet",
+    "document_type": "Phase Control Board / Lovable Build Resume Gate / DocOps Governance Control",
+    "filename": "LOHAShare_AI_Console_Phase_Control_Board_20260613.md",
+    "archive_json_filename": "LOHAShare_AI_Console_Phase_Control_Board_20260613.archive.json",
+    "date_basis": "2026-06-13",
+    "generated_date": "2026-06-15",
+    "language": "zh-Hant"
+  },
+  "source_documents": [
+    "LOHAShare AI Platform Lovable Backfill Intake Report v0.1",
+    "LOHAShare AI Platform Lovable Phase Timeline Reconciliation Report v0.1",
+    "Lovable 做網站後台歸檔狀況盤點與 Phase 對齊回覆"
+  ],
+  "github": {
+    "repository": "yuehsir/lohashare",
+    "candidate_paths": [
+      "docs/LOHAShare_AI_Platform/01_Architecture_Governance/03_Automation_DocOps/Current/",
+      "docs/LOHAShare_AI_Platform/01_Architecture_Governance/04_Content_Quality_and_Consolidation/Current/"
+    ],
+    "tree_validation_status": "Pending GitHub Tree Validation",
+    "written_to_github": false,
+    "committed": false,
+    "pull_request_created": false,
+    "recommended_commit_message": "docs(docops): add LOHAShare AI Console phase control board"
+  },
+  "control_board": {
+    "current_status": {
+      "lovable_implementation_mainline": "Governance reconciliation in progress; direct build paused",
+      "active_submodule": "Email Notification / Email Provider Router",
+      "current_submodule_node": "Phase 2.4-a-2-B1",
+      "docops_status": "Backfill Intake and Phase Timeline Reconciliation in progress"
+    },
+    "prohibited_until_confirmed": [
+      "Do not return to Lovable Build",
+      "Do not directly implement B1 UI Safety Lock",
+      "Do not create a new Lovable Build Prompt",
+      "Do not request migration or code changes",
+      "Do not Publish / Update production",
+      "Do not enable Email Router flags",
+      "Do not set UNSUBSCRIBE_BASE_URL",
+      "Do not update main PRD",
+      "Do not update Document System Index",
+      "Do not commit before path confirmation"
+    ],
+    "build_resume_conditions": [
+      "Backfill Intake Report confirmed",
+      "Phase Timeline Reconciliation Report confirmed",
+      "Phase Control Board confirmed",
+      "Build target explicitly identified as Email Notification / Provider Router Phase 2.4-a-2-B1",
+      "Social / LINE OA Lead Tracking v0.3 explicitly excluded from this build",
+      "User explicitly approves returning to Lovable Build"
+    ]
+  },
+  "priority_recommendations": {
+    "P0": [
+      "LOHAShare_AI_Platform_Lovable_Backfill_Intake_Report_v0.1_20260615.md",
+      "LOHAShare_AI_Platform_Lovable_Backfill_Intake_Report_v0.1_20260615.archive.json",
+      "LOHAShare_AI_Platform_Lovable_Phase_Timeline_Reconciliation_Report_v0.1_20260615.md",
+      "LOHAShare_AI_Platform_Lovable_Phase_Timeline_Reconciliation_Report_v0.1_20260615.archive.json",
+      "LOHAShare_AI_Console_Phase_Control_Board_20260613.md",
+      "LOHAShare_AI_Console_Phase_Control_Board_20260613.archive.json"
+    ],
+    "P1": [
+      "LOHAShare_AI_Business_Website_Operation_Console_PRD_v1.3.1_Email_Router_Production_Rollout_Addendum.md",
+      "LOHAShare_AI_Console_Lovable_Phase_Status_Report_20260613.md",
+      "PRD v2.0 Draft archive/status confirmation record"
+    ],
+    "P2": [
+      "Phase 2.1a–2.3 Timeline Supplement",
+      "Social / LINE OA Lead Tracking v0.3 status backfill",
+      "DocOps Automation MVP v0.1 verification handoff record",
+      "Lead Console MVP v0.2 task inventory handoff record"
+    ]
+  },
+  "safety": {
+    "do_not_write_github": true,
+    "do_not_commit": true,
+    "do_not_create_pr": true,
+    "do_not_modify_lovable_project": true,
+    "do_not_generate_lovable_build_prompt": true
+  },
+  "next_steps": [
+    "Create P0 Backfill Commit Readiness Check artifact if needed.",
+    "Run GitHub tree validation before any commit.",
+    "Fetch/check same-name files before writing.",
+    "Prepare a commit candidate list only after user confirmation."
+  ]
+}
