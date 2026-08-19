@@ -1,0 +1,145 @@
+{
+  "document": {
+    "title": "Phase 2.4-b Production Safe Test Only Preflight Checklist",
+    "filename": "LOHAShare_AI_Console_Phase_2.4-b_Production_Safe_Test_Only_Preflight_Checklist_20260820.md",
+    "type": "Preflight Checklist / Production Safe Test Gate / Release Governance Note",
+    "status": "Archived / Founder Review Required / Not Authorized for Execution",
+    "date": "2026-08-20",
+    "scope": [
+      "LOHAShare AI Platform",
+      "LOHAShare AI Console",
+      "Email Notification",
+      "Email Provider Router",
+      "Phase 2.4-b"
+    ]
+  },
+  "github": {
+    "repository": "yuehsir/lohashare",
+    "branch": "master",
+    "path": "docs/LOHAShare_AI_Platform/06_Release_Notes/LOHAShare_AI_Console/LOHAShare_AI_Console_Phase_2.4-b_Production_Safe_Test_Only_Preflight_Checklist_20260820.md",
+    "archive_json_path": "docs/LOHAShare_AI_Platform/06_Release_Notes/LOHAShare_AI_Console/LOHAShare_AI_Console_Phase_2.4-b_Production_Safe_Test_Only_Preflight_Checklist_20260820.archive.json",
+    "written_to_github": true,
+    "committed": true,
+    "pull_request_created": false,
+    "markdown_create_commit_sha": "a7f261c24c536dc902452b5cabf8616c2bb808f4",
+    "archive_json_create_commit_sha": "pending_fetch_after_create"
+  },
+  "source": {
+    "source_type": "Founder-provided phase status and checklist summary",
+    "source_conversation": "Lovable 做網站後台",
+    "source_status": "Summary Provided / No execution authorized"
+  },
+  "phase_status": {
+    "phase": "Phase 2.4-b",
+    "name": "Production Safe Test Only",
+    "status": "Preflight Checklist Archived / Not Authorized / No Execution",
+    "phase_authorized": false,
+    "email_send_authorized": false,
+    "router_flip_authorized": false,
+    "publish_authorized": false,
+    "lovable_build_prompt_authorized": false
+  },
+  "prior_phase_status": {
+    "phase": "Phase 2.4-a-2-B1",
+    "name": "Minimal UI Safety Lock",
+    "status": "Completed / UI Verified by Lovable Report / Founder Visual Spot Check Passed / Completion Note Archived"
+  },
+  "canonical_test_run_id": "c3596815-d602-498d-927e-a03376ca577b",
+  "incorrect_test_run_id_to_avoid": "c3596015...",
+  "governance_conditions": [
+    "Founder must explicitly authorize Phase 2.4-b",
+    "Production Safe Test Only",
+    "No customer rollout",
+    "No non-whitelisted recipients",
+    "No DB schema or migration changes",
+    "No secrets changes",
+    "No new Email Provider",
+    "No Zoho fallback changes",
+    "No Phase 2.4-c",
+    "No concurrent Embed Code Studio or Duda field acceptance"
+  ],
+  "router_email_provider_conditions": {
+    "EMAIL_PROVIDER_ROUTER_ENABLED_expected": false,
+    "EMAIL_FALLBACK_ENABLED_expected": false,
+    "primary_provider_expected": "Resend",
+    "sender_expected": "notify@send.lohashare.com",
+    "sender_domain_requires_clarification": true,
+    "do_not_use_as_resend_sender": "notify.lohashare.com",
+    "do_not_use_as_general_sender_domain": "send.send.lohashare.com",
+    "zoho_smtp_fallback_enabled": false
+  },
+  "recipient_conditions": {
+    "allowed_source": "lohashare_recipients",
+    "approved_recipient_count_reported": 1,
+    "recipient_must_be_confirmed_by_founder": true,
+    "no_customer_or_non_whitelisted_email": true
+  },
+  "database_baseline_conditions": [
+    "email_send_log safe-test count must be read-only verified",
+    "notification_logs safe-test status must be read-only verified",
+    "monthly_usage email sent count must be read-only verified",
+    "lohashare_recipients approved recipient count must be read-only verified",
+    "recent successful Preview safe test must be traceable",
+    "baseline queries must be read-only"
+  ],
+  "rollback_conditions": [
+    "Rollback steps must be explicit if Router flag is enabled",
+    "Confirm EMAIL_PROVIDER_ROUTER_ENABLED=false after rollback",
+    "Confirm EMAIL_FALLBACK_ENABLED=false after rollback",
+    "Confirm no unexpected email_send_log after rollback",
+    "Confirm no unexpected notification_logs after rollback",
+    "Report rollback result to Founder",
+    "If rollback cannot be confirmed, Phase 2.4-b is prohibited"
+  ],
+  "allowed_only_after_future_authorization": [
+    "read-only preflight",
+    "confirm Router / Fallback / Sender / Sender domain / Recipient status",
+    "execute one Production Safe Test",
+    "send only to lohashare_recipients",
+    "rollback immediately after test",
+    "read-only DB log verification after test",
+    "Founder confirms inbox receipt",
+    "record result"
+  ],
+  "not_authorized": [
+    "Customer rollout",
+    "enable formal notification for customer sites",
+    "send to non-whitelisted recipients",
+    "enable Zoho fallback",
+    "modify secrets",
+    "modify DNS",
+    "modify DB schema",
+    "add migration",
+    "modify RLS",
+    "modify Email Router server logic",
+    "modify Resend integration",
+    "modify Zoho SMTP integration",
+    "modify queue / process function",
+    "Phase 2.4-c",
+    "Embed Code Studio",
+    "Duda / Oasis test page",
+    "/admin/usage",
+    "FAQ / AEO",
+    "Publish unconfirmed changes"
+  ],
+  "stop_conditions": [
+    "Sender domain remains PENDING and cause cannot be determined",
+    "Router status differs from expected",
+    "Fallback status differs from expected",
+    "Approved recipient count is not expected",
+    "lohashare_recipients is not the only recipient source",
+    "safe test recipient cannot be confirmed by Founder",
+    "UI safety lock disappears",
+    "ConfirmDialog does not require PRODUCTION SAFE TEST",
+    "Preflight and Enqueue cannot be clearly distinguished",
+    "baseline query results are inconsistent",
+    "unknown email_send_log appears",
+    "unknown notification_logs appears",
+    "Router flag cannot be rolled back",
+    "Lovable attempts to expand modification scope",
+    "Lovable attempts to enter Phase 2.4-c",
+    "Lovable attempts concurrent Embed Code Studio or Duda integration",
+    "Founder has not explicitly authorized email sending"
+  ],
+  "next_recommended_action": "Founder reviews this checklist and separately decides whether to authorize a Lovable Build Prompt or Phase 2.4-b execution preflight."
+}
