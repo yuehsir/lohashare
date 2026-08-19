@@ -1,0 +1,43 @@
+{
+  "schema": "LOHAShare_AI_Platform_GitHub_Archive_JSON_v0.1",
+  "document": {
+    "title": "LOHAShare AI Platform New Conversation Handoff v1.8 — 原文保留修正版",
+    "version": "v1.8",
+    "date": "2026-08-19",
+    "timezone": "Asia/Taipei",
+    "status": "Draft / Handoff Upgrade / Original-Preserved Correction Draft / Not Committed by ChatGPT",
+    "filename": "LOHAShare_AI_Platform_New_Conversation_Handoff_v1.8_Preflight_Action_Guide_20260819.md",
+    "candidate_path": "docs/LOHAShare_AI_Platform/00_Index/Current/",
+    "source_baseline": {
+      "filename": "LOHAShare_AI_Platform_New_Conversation_Handoff_v1.7_Preflight_Action_Guide_20260609.md",
+      "path": "docs/LOHAShare_AI_Platform/00_Index/Current/",
+      "sha": "535475aceb40385184b2b9ea25c1e0ed4f8614a3"
+    },
+    "structure": [
+      "Part A｜v1.7 原文完整保留區",
+      "Part B｜v1.8 增補條款區",
+      "Part C｜檢核與歸檔判斷區"
+    ]
+  },
+  "write_status": {
+    "local_file_generated": true,
+    "github_written": false,
+    "committed": false,
+    "pull_request_created": false,
+    "document_system_index_updated": false,
+    "v1_7_moved_or_archived": false,
+    "lovable_build_updated": false
+  },
+  "governance_notes": [
+    "本次只產生本地可下載 Markdown 與 Archive JSON。",
+    "未寫入 GitHub、未 commit、未建立 PR。",
+    "Document System Index 建議於 v1.8 實際寫入 GitHub 並取得 SHA 後，再進行更新 dry-run。",
+    "v1.7 Archive / superseded 建議於 v1.8 寫入成功後再 dry-run。"
+  ],
+  "recommended_next_steps": [
+    "執行 GitHub 同名檔 read-only 檢查。",
+    "若無同名衝突，由使用者決定是否批准 GitHub 寫入。",
+    "v1.8 寫入成功後，再 dry-run v1.7 Archive / superseded。",
+    "v1.8 寫入成功後，再 dry-run Document System Index 更新。"
+  ]
+}
