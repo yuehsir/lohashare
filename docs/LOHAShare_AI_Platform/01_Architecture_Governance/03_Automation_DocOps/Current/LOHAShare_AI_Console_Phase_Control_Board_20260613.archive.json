@@ -90,5 +90,17 @@
     "Run GitHub tree validation before any commit.",
     "Fetch/check same-name files before writing.",
     "Prepare a commit candidate list only after user confirmation."
-  ]
+  ],
+  "post_archive_status_correction": {
+  "correction_date": "2026-08-20",
+  "correction_reason": "Original status reflects draft-time state; file now exists in GitHub.",
+  "repository": "yuehsir/lohashare",
+  "branch": "master",
+  "path": "docs/LOHAShare_AI_Platform/01_Architecture_Governance/03_Automation_DocOps/Current/LOHAShare_AI_Console_Phase_Control_Board_20260613.archive.json",
+  "current_github_file_sha": "18914a4007da4c29b0e8a1fd927ef8119caeb565",
+  "paired_markdown_path": "docs/LOHAShare_AI_Platform/01_Architecture_Governance/03_Automation_DocOps/Current/LOHAShare_AI_Console_Phase_Control_Board_20260613.md",
+  "paired_markdown_current_github_file_sha": "edff932cdb1d1c002aed70617e3f1377cca8e936",
+  "per_file_commit_sha": "Pending per-file commit trace",
+  "do_not_rewrite_original_draft_status": true
+  }
 }
