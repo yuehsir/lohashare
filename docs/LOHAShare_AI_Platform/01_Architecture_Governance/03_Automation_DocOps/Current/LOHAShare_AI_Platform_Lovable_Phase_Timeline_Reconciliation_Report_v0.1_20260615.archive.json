@@ -56,5 +56,17 @@
     "Run GitHub tree validation before any commit.",
     "Fetch/check same-name files before writing.",
     "Decide whether P0 files should be committed as one batch."
-  ]
+  ],
+  "post_archive_status_correction": {
+  "correction_date": "2026-08-20",
+  "correction_reason": "Original status reflects draft-time state; file now exists in GitHub.",
+  "repository": "yuehsir/lohashare",
+  "branch": "master",
+  "path": "docs/LOHAShare_AI_Platform/01_Architecture_Governance/03_Automation_DocOps/Current/LOHAShare_AI_Platform_Lovable_Phase_Timeline_Reconciliation_Report_v0.1_20260615.archive.json",
+  "current_github_file_sha": "14c814b0db169ea849a722dcf115e82c4b59221d",
+  "paired_markdown_path": "docs/LOHAShare_AI_Platform/01_Architecture_Governance/03_Automation_DocOps/Current/LOHAShare_AI_Platform_Lovable_Phase_Timeline_Reconciliation_Report_v0.1_20260615.md",
+  "paired_markdown_current_github_file_sha": "4589f38938e68a5e2a025373175cd7c5dd351809",
+  "per_file_commit_sha": "Pending per-file commit trace",
+  "do_not_rewrite_original_draft_status": true
+  }
 }
