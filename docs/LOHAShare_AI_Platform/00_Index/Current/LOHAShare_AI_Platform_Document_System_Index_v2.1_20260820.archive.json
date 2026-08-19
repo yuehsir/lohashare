@@ -1,0 +1,52 @@
+{
+  "schema": "LOHAShare_AI_Platform_GitHub_Archive_JSON_v0.1",
+  "document": {
+    "title": "LOHAShare AI Platform Document System Index v2.1",
+    "version": "v2.1",
+    "status": "Draft / Index Upgrade / Not Committed by ChatGPT",
+    "date": "2026-08-20",
+    "timezone": "Asia/Taipei",
+    "filename": "LOHAShare_AI_Platform_Document_System_Index_v2.1_20260820.md",
+    "candidate_path": "docs/LOHAShare_AI_Platform/00_Index/Current/",
+    "source_baseline": {
+      "filename": "LOHAShare_AI_Platform_Document_System_Index_v2.0_20260601.md",
+      "path": "docs/LOHAShare_AI_Platform/00_Index/Current/",
+      "sha": "2a8f45d2b60f8b86154d069707687904c50845e3"
+    }
+  },
+  "changes": {
+    "type": "minimal_required_index_upgrade",
+    "summary": [
+      "保留 v2.0 原有核心入口。",
+      "將新對話啟動總控文件由 v1.7 更新為 v1.8。",
+      "新增 v1.8 Archive JSON metadata 路徑。",
+      "記錄 v1.8 Markdown 與 Archive JSON 的 commit SHA 與 GitHub 檔案 SHA。",
+      "新增 2026-08-20 版本索引更新紀錄。"
+    ],
+    "new_conversation_handoff_v1_8": {
+      "markdown_path": "docs/LOHAShare_AI_Platform/00_Index/Current/LOHAShare_AI_Platform_New_Conversation_Handoff_v1.8_Preflight_Action_Guide_20260819.md",
+      "markdown_commit_sha": "b4808ffa57cf6be06dd9c33d58038a3f1dbd0e59",
+      "markdown_file_sha": "2ef0697f0eeb6656a65147aeeddf78a94d49d30a",
+      "archive_json_path": "docs/LOHAShare_AI_Platform/00_Index/Current/LOHAShare_AI_Platform_New_Conversation_Handoff_v1.8_Preflight_Action_Guide_20260819.archive.json",
+      "archive_json_commit_sha": "cb1579bb80e156340641765ef16aa897150b9147",
+      "archive_json_file_sha": "df8d088c6fee770d67eccf85d1263e69fb56ab2d"
+    }
+  },
+  "write_status": {
+    "local_file_generated": true,
+    "github_written": false,
+    "committed": false,
+    "pull_request_created": false,
+    "document_system_index_updated_in_github": false,
+    "v1_7_moved_or_archived": false,
+    "v2_0_moved_or_archived": false,
+    "lovable_build_updated": false
+  },
+  "recommended_next_steps": [
+    "執行 GitHub 同名檔 read-only 檢查。",
+    "若無同名檔，執行 GitHub 寫入前 dry-run。",
+    "使用者批准後才寫入 GitHub。",
+    "v2.1 寫入成功後，再 dry-run v2.0 Archive / superseded。",
+    "v2.1 寫入成功後，再 dry-run v1.7 Archive / superseded。"
+  ]
+}
