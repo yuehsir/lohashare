@@ -1,0 +1,114 @@
+{
+  "document": {
+    "title": "LOHAShare AI Console Phase 2.4-a-2-B1 Minimal UI Safety Lock Completion Note 20260820",
+    "filename": "LOHAShare_AI_Console_Phase_2.4-a-2-B1_Minimal_UI_Safety_Lock_Completion_Note_20260820.md",
+    "type": "Release Note / UI Safety Verification Note",
+    "status": "Dry-run / Founder Review Required / Not Committed",
+    "date": "2026-08-20",
+    "scope": [
+      "LOHAShare AI Platform",
+      "LOHAShare AI Console",
+      "Lovable MVP",
+      "Lead Console",
+      "Email Notification",
+      "Phase 2.4-a-2-B1"
+    ]
+  },
+  "github": {
+    "repository": "yuehsir/lohashare",
+    "branch": "master",
+    "path": "docs/LOHAShare_AI_Platform/06_Release_Notes/LOHAShare_AI_Console/LOHAShare_AI_Console_Phase_2.4-a-2-B1_Minimal_UI_Safety_Lock_Completion_Note_20260820.md",
+    "archive_json_path": "docs/LOHAShare_AI_Platform/06_Release_Notes/LOHAShare_AI_Console/LOHAShare_AI_Console_Phase_2.4-a-2-B1_Minimal_UI_Safety_Lock_Completion_Note_20260820.archive.json",
+    "written_to_github": false,
+    "committed": false,
+    "pull_request_created": false,
+    "commit_sha": null
+  },
+  "source": {
+    "source_type": "Lovable Completion Report Summary / UI Verification Summary Provided by Founder",
+    "source_conversation": "Lovable 做網站後台",
+    "source_status": "Summary Provided / Full Lovable Internal Execution Trace Not Attached",
+    "verification_status": "UI Verified by Lovable Report / Pending Founder Visual Spot Check"
+  },
+  "phase_status": {
+    "phase": "Phase 2.4-a-2-B1",
+    "name": "Minimal UI Safety Lock",
+    "status": "Completed / UI Verified by Lovable Report / Pending Founder Visual Spot Check",
+    "next_phase_authorized": false
+  },
+  "modified_files_reported_by_lovable": [
+    "src/routes/_authenticated/admin/sites.$id.notifications.tsx"
+  ],
+  "not_modified_reported_by_lovable": [
+    "server function",
+    "email router",
+    "resend / zoho / queue / process",
+    "DB schema",
+    "migration",
+    "secrets",
+    "DNS",
+    "ConfirmDialog.tsx"
+  ],
+  "not_executed_reported_by_lovable": [
+    "Publish",
+    "email send",
+    "click Preflight",
+    "click Safe Test Enqueue",
+    "flip EMAIL_PROVIDER_ROUTER_ENABLED",
+    "Phase 2.4-b",
+    "Embed Code Studio",
+    "Duda / Oasis live acceptance test"
+  ],
+  "ui_verification": {
+    "page": "/admin/sites/169aa3ac…/notifications",
+    "confirmed_items": [
+      "Preflight copy indicates audit-only and no email send",
+      "preflight-audit-only-button",
+      "email-provider-status-card",
+      "router-mode-indicator",
+      "safe-test-warning-card",
+      "safe-test-enqueue-button",
+      "safe-test-enqueue-confirm-dialog",
+      "safe-test-admin-required",
+      "ConfirmDialog requires PRODUCTION SAFE TEST",
+      "ConfirmDialog destructive true",
+      "confirmText = 確認真實寄送 Safe Test",
+      "cancelText = 取消",
+      "Cancel does not call server function"
+    ]
+  },
+  "provider_status_reported": {
+    "provider_path": "Legacy Lovable Emails（Router 未啟用）",
+    "sender": "notify@send.lohashare.com",
+    "sender_domain": "PENDING",
+    "approved_recipient_source": "lohashare_recipients",
+    "approved_recipient_count": 1,
+    "router": "disabled",
+    "fallback": "disabled"
+  },
+  "quality_checks": {
+    "tsgo_no_emit": "0 error",
+    "eslint": {
+      "status": "Known Existing Lint Issue / Not Blocking B1",
+      "issue": "284:26 no-explicit-any"
+    }
+  },
+  "non_blocking_observations": [
+    {
+      "item": "Sender domain displays PENDING",
+      "status": "Non-blocking for B1",
+      "recommended_follow_up": "Confirm before Phase 2.4-b whether UI should display send.lohashare.com or Unknown / not available."
+    }
+  ],
+  "not_authorized": [
+    "Phase 2.4-b",
+    "Production Safe Test",
+    "Router enablement",
+    "Email send",
+    "Publish",
+    "Customer rollout",
+    "Embed Code Studio",
+    "Duda / Oasis test page"
+  ],
+  "next_recommended_action": "Founder Visual Spot Check before any Phase 2.4-b authorization."
+}
